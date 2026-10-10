@@ -4,7 +4,6 @@
 # revised notes from which lecture notes and website are generated (private: local git repository)
 note/
 # LaTeX sources of the lecture notes and exercise books (online only the PDFs in docs/pdf/)
-volumes/
 volumi/
 notes/
 notes_*/
@@ -30,3 +29,9 @@ __pycache__/
 # misc
 .DS_Store
 *conflicted copy*
+
+# volumi generati: git traccia SOLO i PDF delle dispense (mai .tex, .aux e altri file di compilazione)
+volumes/*
+!volumes/lecture_notes_*/
+volumes/lecture_notes_*/*
+!volumes/lecture_notes_*/*.pdf
