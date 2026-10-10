@@ -644,3 +644,14 @@ title: "Optimization problems"
     - <strong>Local maxima that are not global.</strong> In $N\big((-4),1\big) \cap [-4,4] = [-4,-3)$ we have $-2 \le x+2 < -1$ and then $f(x) = (x+2)^2 \le 4 = f(-4)$: the point $x=-4$ is a point of local maximum. In $N\big((\frac{1}{8}),1\big) = (-\frac{7}{8},\frac{9}{8})$ we have $0 < x+2 \le \frac{17}{8}$ when $x \le \frac{1}{8}$, so that $f(x) = (x+2)^2 \le \frac{289}{64}$, and $-\frac{15}{8} \le x-2 < 0$ when $x \ge \frac{1}{8}$, so that $f(x) = (x-2)^2+1 \le \frac{225}{64}+1 = \frac{289}{64}$; in both cases $f(x) \le f(\frac{1}{8})$: the point $x=\frac{1}{8}$ is a point of local maximum. Neither of them is a point of (global) maximum, since $f(-4) = 4 < 5$ and $f(\frac{1}{8}) = \frac{289}{64} < 5$.
 
     Consider the optimization problem $\min \{\, f(x) \text{ subject to } -4 \le x \le 4 \,\}$: a method that only looks at the points close to $x=2$ finds the local minimum $1$, but the optimal value is $z(P) = 0$, attained at $\tilde{\boldsymbol x}(P) = (-2)$.
+
+<!-- laboratorio-interattivo: sezione generata da interattivi.py -->
+
+## Interactive lab { #interactive-lab }
+
+The ideas of the chapter, hands on: move the sliders and drag the points.
+All the graphs of the course are in the [interactive lab](../interactive/index.md#cap-5).
+
+<div class="gi" data-grafico="ottimo-intervallo"></div>
+
+<div class="gi" data-grafico="ottimi-locali"></div>

@@ -783,3 +783,12 @@ title: "Convex and concave functions"
 !!! chiave ""
 
     The points that satisfy a finite number of constraints $f_i({\boldsymbol x}) \le 0$ with convex functions $f_i$ form a convex set. For instance, every half-space $\{{\boldsymbol x} \in \R^n : {\boldsymbol a}'{\boldsymbol x} \le b\}$, with ${\boldsymbol a} \in \R^n$ and $b \in \R$, is a convex set of this kind, since the linear function ${\boldsymbol a}'{\boldsymbol x} - b$ is convex; so is every intersection of finitely many half-spaces, as the polyhedra of linear programming.
+
+<!-- laboratorio-interattivo: sezione generata da interattivi.py -->
+
+## Interactive lab { #interactive-lab }
+
+The ideas of the chapter, hands on: move the sliders and drag the points.
+All the graphs of the course are in the [interactive lab](../interactive/index.md#cap-3).
+
+<div class="gi" data-grafico="corda"></div>

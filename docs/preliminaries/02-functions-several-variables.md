@@ -293,3 +293,12 @@ title: "Functions of several variables"
 !!! chiave ""
 
     The gradient $\nabla f(\boldsymbol x)$ is the column vector of first-order partial derivatives: it points in the direction of steepest ascent and is perpendicular to the level set through $\boldsymbol x$. The Hessian $\nabla^2 f(\boldsymbol x)$ is the (symmetric) matrix of second-order partial derivatives and describes the local curvature of $f$.
+
+<!-- laboratorio-interattivo: sezione generata da interattivi.py -->
+
+## Interactive lab { #interactive-lab }
+
+The ideas of the chapter, hands on: move the sliders and drag the points.
+All the graphs of the course are in the [interactive lab](../interactive/index.md#cap-2).
+
+<div class="gi" data-grafico="livello-gradiente"></div>

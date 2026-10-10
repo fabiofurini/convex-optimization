@@ -23,6 +23,7 @@ with their proofs, examples worked out step by step and exercises with solutions
 
 [Start with the preliminaries :material-arrow-right:](preliminaries/index.md){ .md-button .md-button--primary }
 [The exercises](exercises/index.md){ .md-button }
+[Try an interactive graph](interactive/index.md){ .md-button }
 [:material-download: Download the lecture notes (PDF)](downloads.md){ .md-button }
 
 </div>
@@ -81,6 +82,15 @@ lecture notes: on the website and in the PDF you find everything in the same pla
 ## Don't miss
 
 <div class="grid cards" markdown>
+
+-   :material-gesture-tap: **Interactive lab**
+
+    ---
+
+    Move the parameters with the sliders, drag the points and watch sets, functions and
+    optima change; then put yourself to the test with the challenges.
+
+    [:octicons-arrow-right-24: The graphs](interactive/index.md)
 
 -   :material-pencil-box-multiple: **Exercises with solutions**
 

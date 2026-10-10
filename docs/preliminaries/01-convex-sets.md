@@ -422,3 +422,16 @@ title: "Convex sets"
 ![Figure 15](../img/01-convex-sets/fig15.svg){ .fig .ovale loading=lazy style="width:37%" }
 
 </div>
+
+<!-- laboratorio-interattivo: sezione generata da interattivi.py -->
+
+## Interactive lab { #interactive-lab }
+
+The ideas of the chapter, hands on: move the sliders and drag the points.
+All the graphs of the course are in the [interactive lab](../interactive/index.md#cap-1).
+
+<div class="gi" data-grafico="combinazione"></div>
+
+<div class="gi" data-grafico="test-convessita"></div>
+
+<div class="gi" data-grafico="palle-norma"></div>

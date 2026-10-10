@@ -400,3 +400,12 @@ title: "Convex and concave optimization problems"
         \qquad \text{and} \qquad
         z(P) = f(1) = 6.
         $$
+
+<!-- laboratorio-interattivo: sezione generata da interattivi.py -->
+
+## Interactive lab { #interactive-lab }
+
+The ideas of the chapter, hands on: move the sliders and drag the points.
+All the graphs of the course are in the [interactive lab](../interactive/index.md#cap-6).
+
+<div class="gi" data-grafico="discesa-locale"></div>

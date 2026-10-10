@@ -578,3 +578,12 @@ title: "Quadratic functions"
 !!! chiave ""
 
     A quadratic function ${\boldsymbol x}' {\boldsymbol Q} \; {\boldsymbol x}$ is convex in its domain if and only if the matrix ${\boldsymbol Q}$ is positive semidefinite. Adding a linear function and a constant does not change its convexity.
+
+<!-- laboratorio-interattivo: sezione generata da interattivi.py -->
+
+## Interactive lab { #interactive-lab }
+
+The ideas of the chapter, hands on: move the sliders and drag the points.
+All the graphs of the course are in the [interactive lab](../interactive/index.md#cap-4).
+
+<div class="gi" data-grafico="matrice-q"></div>
