@@ -1,26 +1,26 @@
 # Preliminaries
 
-*Part 1 of the course, volume 1 of the lecture notes.* Functions of several variables (gradient, Hessian, level sets), convex combinations and convex sets, norms, convex and concave functions, quadratic functions and their convexity.
+*Part 1 of the course, volume 1 of the lecture notes.* Convex combinations and convex sets, functions of several variables (gradient, Hessian, level sets), norms, convex and concave functions, quadratic functions and their convexity.
 
 [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](../pdf/lecture-notes-1-preliminaries.pdf){ .md-button }
 
 <div class="grid cards" markdown>
 
--   **1. Functions of several variables**
-
-    ---
-
-    Functions of several variables · Gradient, Hessian and level sets · Examples of functions that are not quadratic
-
-    [:octicons-arrow-right-24: Read the chapter](01-functions-several-variables.md) · [Exercises](../exercises/ex-01-functions-several-variables.md)
-
--   **2. Convex sets**
+-   **1. Convex sets**
 
     ---
 
     Convex combination · Convex sets · Examples of convex sets · Properties of convex sets
 
-    [:octicons-arrow-right-24: Read the chapter](02-convex-sets.md) · [Exercises](../exercises/ex-02-convex-sets.md)
+    [:octicons-arrow-right-24: Read the chapter](01-convex-sets.md) · [Exercises](../exercises/ex-01-convex-sets.md)
+
+-   **2. Functions of several variables**
+
+    ---
+
+    Functions of several variables · Gradient, Hessian and level sets · Examples of functions that are not quadratic
+
+    [:octicons-arrow-right-24: Read the chapter](02-functions-several-variables.md) · [Exercises](../exercises/ex-02-functions-several-variables.md)
 
 -   **3. Convex and concave functions**
 

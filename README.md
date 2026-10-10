@@ -18,7 +18,7 @@ the same numbering and colors as the PDFs.
 
 | Part | Topics |
 |---|---|
-| 1 · Preliminaries | functions of several variables (gradient, Hessian, level sets), convex sets, norms, convex and concave functions, quadratic functions |
+| 1 · Preliminaries | convex sets, functions of several variables (gradient, Hessian, level sets), norms, convex and concave functions, quadratic functions |
 | 2 · Optimization problems | optimization problems, local and global optima, convex and concave problems |
 | Exercises | exercises for every chapter, with worked solutions |
 

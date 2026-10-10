@@ -6,15 +6,15 @@ title: "Convex sets"
 
 <div class="info-capitolo" markdown>
 
-**Part 1 · Preliminaries · Chapter 2** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](../pdf/lecture-notes-1-preliminaries.pdf) · [:material-pencil: Exercises](../exercises/ex-02-convex-sets.md)
+**Part 1 · Preliminaries · Chapter 1** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](../pdf/lecture-notes-1-preliminaries.pdf) · [:material-pencil: Exercises](../exercises/ex-01-convex-sets.md)
 
 </div>
 
-## 2.1 Convex combination
+## 1.1 Convex combination
 
 <a id="box-1-defXX"></a>
 
-!!! definizione "Definition 2.1: convex combination"
+!!! definizione "Definition 1.1: convex combination"
 
     Given two points
 
@@ -53,11 +53,11 @@ title: "Convex sets"
 
 - The convex combinations for all values $\lambda \in [0,1]$ are the points on the segment connecting the two points ${\boldsymbol p}$ and ${\boldsymbol w}$. In $\R^2$, the blue segment of the following figure:
 
-    ![Figure 1](../img/02-convex-sets/fig01.svg){ .fig .ovale loading=lazy style="width:82%" }
+    ![Figure 1](../img/01-convex-sets/fig01.svg){ .fig .ovale loading=lazy style="width:82%" }
 
 <a id="box-2-texexpbox1"></a>
 
-!!! esempio "Example 2.1: convex combination"
+!!! esempio "Example 1.1: convex combination"
 
     Let us consider the points $\begin{pmatrix}2 \\[0.3ex] 5\end{pmatrix}$ and $\begin{pmatrix}5 \\[0.3ex] 2\end{pmatrix}$ in $\mathbb{R}^2$. Their convex combination with $\lambda = \tfrac{1}{3}$ is the point:
 
@@ -69,11 +69,11 @@ title: "Convex sets"
     =\;\begin{pmatrix}4 \\[0.3ex] 3\end{pmatrix}
     $$
 
-    ![Figure 2](../img/02-convex-sets/fig02.svg){ .fig .ovale loading=lazy style="width:71%" }
+    ![Figure 2](../img/01-convex-sets/fig02.svg){ .fig .ovale loading=lazy style="width:71%" }
 
 <a id="box-3-defXX"></a>
 
-!!! definizione "Definition 2.2: convex combination of $m$ points"
+!!! definizione "Definition 1.2: convex combination of $m$ points"
 
     Given $m$ points
 
@@ -129,11 +129,11 @@ title: "Convex sets"
 
 - In $\R^2$ with $m=3$ points, the convex hull is the set of all the points inside (and on the boundary of) the triangle connecting the three points: the blue filled region of the following figure, where the blue point is the convex combination with $\lambda_1=\frac{1}{3}$, $\lambda_2=\frac{1}{2}$ and $\lambda_3=\frac{1}{6}$:
 
-    ![Figure 3](../img/02-convex-sets/fig03.svg){ .fig .ovale loading=lazy style="width:82%" }
+    ![Figure 3](../img/01-convex-sets/fig03.svg){ .fig .ovale loading=lazy style="width:82%" }
 
 <a id="box-4-texexpbox1"></a>
 
-!!! esempio "Example 2.2: convex combination of $3$ points"
+!!! esempio "Example 1.2: convex combination of $3$ points"
 
     Let us consider the three points $\begin{pmatrix}1 \\[0.3ex] 1\end{pmatrix}$, $\begin{pmatrix}5 \\[0.3ex] 3\end{pmatrix}$ and $\begin{pmatrix}3 \\[0.3ex] 5\end{pmatrix}$ in $\mathbb{R}^2$. Their convex combination with $\lambda_1 = \lambda_2 = \lambda_3 = \tfrac{1}{3}$ is the point:
 
@@ -145,13 +145,13 @@ title: "Convex sets"
     =\;\begin{pmatrix}3 \\[0.3ex] 3\end{pmatrix}
     $$
 
-    ![Figure 4](../img/02-convex-sets/fig04.svg){ .fig .ovale loading=lazy style="width:71%" }
+    ![Figure 4](../img/01-convex-sets/fig04.svg){ .fig .ovale loading=lazy style="width:71%" }
 
-## 2.2 Convex sets
+## 1.2 Convex sets
 
 <a id="box-5-defXX"></a>
 
-!!! definizione "Definition 2.3: convex set"
+!!! definizione "Definition 1.3: convex set"
 
     A set $A \subseteq \R^n$  is  <strong>convex</strong> if
 
@@ -167,9 +167,9 @@ title: "Convex sets"
 
 <div class="figure-affiancate" markdown>
 
-![Figure 5](../img/02-convex-sets/fig05.svg){ .fig .ovale loading=lazy style="width:82%" }
+![Figure 5](../img/01-convex-sets/fig05.svg){ .fig .ovale loading=lazy style="width:82%" }
 
-![Figure 6](../img/02-convex-sets/fig06.svg){ .fig .ovale loading=lazy style="width:82%" }
+![Figure 6](../img/01-convex-sets/fig06.svg){ .fig .ovale loading=lazy style="width:82%" }
 
 </div>
 
@@ -177,17 +177,17 @@ title: "Convex sets"
 
 <div class="figure-affiancate" markdown>
 
-![Figure 7](../img/02-convex-sets/fig07.svg){ .fig .ovale loading=lazy style="width:82%" }
+![Figure 7](../img/01-convex-sets/fig07.svg){ .fig .ovale loading=lazy style="width:82%" }
 
-![Figure 8](../img/02-convex-sets/fig08.svg){ .fig .ovale loading=lazy style="width:82%" }
+![Figure 8](../img/01-convex-sets/fig08.svg){ .fig .ovale loading=lazy style="width:82%" }
 
 </div>
 
-## 2.3 Examples of convex sets
+## 1.3 Examples of convex sets
 
 <a id="box-6-propXX"></a>
 
-!!! teorema "Observation 2.4"
+!!! teorema "Observation 1.4"
 
     For every vector $\boldsymbol c \in \mathbb{R}^{n}$ and every scalar $r \in \mathbb{R}_{>0}$, the set
 
@@ -227,7 +227,7 @@ title: "Convex sets"
 
 <a id="box-7-texexpbox1"></a>
 
-!!! esempio "Example 2.3: diamond in $\R^2$"
+!!! esempio "Example 1.3: diamond in $\R^2$"
 
     For example, in $\mathbb{R}^2$, with $r = 3$ and ${\boldsymbol c} = \begin{pmatrix} 3 \\[0.3ex] 3 \end{pmatrix}$, we have the following convex set:
 
@@ -244,11 +244,11 @@ title: "Convex sets"
 
     The points of this set are all those lying inside (and on) the diamond (rotated square) centered at  $\begin{pmatrix} 3 \\[0.3ex] 3 \end{pmatrix}$, with vertices at $\begin{pmatrix}0\\3\end{pmatrix}$, $\begin{pmatrix}3\\0\end{pmatrix}$, $\begin{pmatrix}6\\3\end{pmatrix}$, $\begin{pmatrix}3\\6\end{pmatrix}$, shown as the red shaded region in the figure below.
 
-    ![Figure 9](../img/02-convex-sets/fig09.svg){ .fig .ovale loading=lazy style="width:59%" }
+    ![Figure 9](../img/01-convex-sets/fig09.svg){ .fig .ovale loading=lazy style="width:59%" }
 
 <a id="box-8-propXX"></a>
 
-!!! teorema "Observation 2.5"
+!!! teorema "Observation 1.5"
 
     For every vector $\boldsymbol c \in \mathbb{R}^{n}$ and every scalar $r \in \mathbb{R}_{>0}$, the set
 
@@ -288,7 +288,7 @@ title: "Convex sets"
 
 <a id="box-9-texexpbox1"></a>
 
-!!! esempio "Example 2.4: closed ball in $\R^2$"
+!!! esempio "Example 1.4: closed ball in $\R^2$"
 
     For example, in $\mathbb{R}^2$, with $r = 3$ and ${\boldsymbol c} = \begin{pmatrix} 3 \\[0.3ex] 3 \end{pmatrix}$, we have the following convex set:
 
@@ -305,11 +305,11 @@ title: "Convex sets"
 
     The points of this set are all those lying inside (and on) the circle of radius $3$ centered at  $\begin{pmatrix} 3 \\[0.3ex] 3 \end{pmatrix}$, shown as the red shaded region in the figure below.
 
-    ![Figure 10](../img/02-convex-sets/fig10.svg){ .fig .ovale loading=lazy style="width:59%" }
+    ![Figure 10](../img/01-convex-sets/fig10.svg){ .fig .ovale loading=lazy style="width:59%" }
 
 <a id="box-10-propXX"></a>
 
-!!! teorema "Observation 2.6"
+!!! teorema "Observation 1.6"
 
     For every  vector $\boldsymbol c \in \mathbb{R}^{n}$ and every scalar $r \in \mathbb{R}_{>0}$, the set
 
@@ -350,7 +350,7 @@ title: "Convex sets"
 
 <a id="box-11-texexpbox1"></a>
 
-!!! esempio "Example 2.5: square in $\R^2$"
+!!! esempio "Example 1.5: square in $\R^2$"
 
     For example, in $\mathbb{R}^2$, with $r = 3$ and ${\boldsymbol c} = \begin{pmatrix} 3 \\[0.3ex] 3 \end{pmatrix}$, we have the following convex set:
 
@@ -367,13 +367,13 @@ title: "Convex sets"
 
     The points of this set are all those lying inside (and on) the axis-aligned square of side $6$ centered at  $\begin{pmatrix} 3 \\[0.3ex] 3 \end{pmatrix}$, with vertices at $\begin{pmatrix}0\\0\end{pmatrix}$, $\begin{pmatrix}6\\0\end{pmatrix}$, $\begin{pmatrix}6\\6\end{pmatrix}$, $\begin{pmatrix}0\\6\end{pmatrix}$, shown as the red shaded region in the figure below.
 
-    ![Figure 11](../img/02-convex-sets/fig11.svg){ .fig .ovale loading=lazy style="width:59%" }
+    ![Figure 11](../img/01-convex-sets/fig11.svg){ .fig .ovale loading=lazy style="width:59%" }
 
-## 2.4 Properties of convex sets
+## 1.4 Properties of convex sets
 
 <a id="box-12-propXX"></a>
 
-!!! teorema "Observation 2.7"
+!!! teorema "Observation 1.7"
 
     For every $m$ convex sets $A_i \subseteq \mathbb{R}^n$ with $i \in \{1,2,\dots,m\}$, the set
 
@@ -407,9 +407,9 @@ title: "Convex sets"
 
 <div class="figure-affiancate" markdown>
 
-![Figure 12](../img/02-convex-sets/fig12.svg){ .fig .ovale loading=lazy style="width:37%" }
+![Figure 12](../img/01-convex-sets/fig12.svg){ .fig .ovale loading=lazy style="width:37%" }
 
-![Figure 13](../img/02-convex-sets/fig13.svg){ .fig .ovale loading=lazy style="width:37%" }
+![Figure 13](../img/01-convex-sets/fig13.svg){ .fig .ovale loading=lazy style="width:37%" }
 
 </div>
 
@@ -417,8 +417,8 @@ title: "Convex sets"
 
 <div class="figure-affiancate" markdown>
 
-![Figure 14](../img/02-convex-sets/fig14.svg){ .fig .ovale loading=lazy style="width:37%" }
+![Figure 14](../img/01-convex-sets/fig14.svg){ .fig .ovale loading=lazy style="width:37%" }
 
-![Figure 15](../img/02-convex-sets/fig15.svg){ .fig .ovale loading=lazy style="width:37%" }
+![Figure 15](../img/01-convex-sets/fig15.svg){ .fig .ovale loading=lazy style="width:37%" }
 
 </div>

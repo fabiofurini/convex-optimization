@@ -6,13 +6,13 @@ title: "Exercises · Functions of several variables"
 
 <div class="info-capitolo" markdown>
 
-**Exercises · Chapter 1** · each solution opens with a click · [:material-book-open-variant: Chapter 1](../preliminaries/01-functions-several-variables.md) · [:material-file-pdf-box: Exercises, volume 1 (PDF)](../pdf/exercises-1-preliminaries.pdf)
+**Exercises · Chapter 2** · each solution opens with a click · [:material-book-open-variant: Chapter 2](../preliminaries/02-functions-several-variables.md) · [:material-file-pdf-box: Exercises, volume 1 (PDF)](../pdf/exercises-1-preliminaries.pdf)
 
 </div>
 
-<a id="esercizio-1-1"></a>
+<a id="esercizio-2-1"></a>
 
-!!! esercizio "Exercise 1.1: Functions of several variables (E1)"
+!!! esercizio "Exercise 2.1: Functions of several variables (E1)"
 
     Consider the following real-valued function:
 
@@ -67,9 +67,9 @@ title: "Exercises · Functions of several variables"
         \nabla^2 f\left(\begin{pmatrix} -1 \\ 2 \end{pmatrix}\right) = \begin{pmatrix} -6 & 8 \\ 8 & -4 \end{pmatrix}
         $$
 
-<a id="esercizio-1-2"></a>
+<a id="esercizio-2-2"></a>
 
-!!! esercizio "Exercise 1.2: Functions of several variables (E2)"
+!!! esercizio "Exercise 2.2: Functions of several variables (E2)"
 
     Consider the following real-valued function:
 
@@ -135,9 +135,9 @@ title: "Exercises · Functions of several variables"
 
         (for example $\begin{pmatrix} 0 \\ 0 \end{pmatrix}$, $\begin{pmatrix} 1 \\ 1 \end{pmatrix}$ and $\begin{pmatrix} -1 \\ 1 \end{pmatrix}$), which is an infinite set of points. At all these points the value of the function is $f({\boldsymbol x}) = (x_1^2 - x_2)^2 = 0$: this parabola is the level set $L(0)$ of the function.
 
-<a id="esercizio-1-3"></a>
+<a id="esercizio-2-3"></a>
 
-!!! esercizio "Exercise 1.3: Functions of several variables (E3)"
+!!! esercizio "Exercise 2.3: Functions of several variables (E3)"
 
     Consider the following real-valued function of three variables:
 
@@ -200,9 +200,9 @@ title: "Exercises · Functions of several variables"
         \nabla^2 f\left(\begin{pmatrix} 0 \\ 1 \\ -1 \end{pmatrix}\right) = \begin{pmatrix} -2 & -2 & 0 \\ -2 & 0 & -2 \\ 0 & -2 & 2 \end{pmatrix}
         $$
 
-<a id="esercizio-1-4"></a>
+<a id="esercizio-2-4"></a>
 
-!!! esercizio "Exercise 1.4: Functions of several variables (E4)"
+!!! esercizio "Exercise 2.4: Functions of several variables (E4)"
 
     Consider the following real-valued function:
 
@@ -255,7 +255,7 @@ title: "Exercises · Functions of several variables"
 
         <strong>Graphical solution:</strong> the figure shows the level sets $L(0)$ (in blue) and $L(2)$ (in orange) and the two gradients (in red), drawn from their points:
 
-        ![Figure 1](../img/ex-01-functions-several-variables/fig01.svg){ .fig .ovale loading=lazy style="width:50%" }
+        ![Figure 1](../img/ex-02-functions-several-variables/fig01.svg){ .fig .ovale loading=lazy style="width:50%" }
 
         The tangent direction of a level set $x_2 = x_1^2 + k$ at a point with first coordinate $x_1$ is $\begin{pmatrix} 1 \\ 2\,x_1 \end{pmatrix}$ (the derivative of $x_1^2 + k$ is $2\,x_1$):
 

@@ -10,11 +10,11 @@ The lecture notes and the exercise books in PDF, updated at every publication of
 
 <div class="grid cards" markdown>
 
--   :material-book-open-variant: **Lecture notes, volume 1 · Preliminaries: functions, convex sets and convex functions**
+-   :material-book-open-variant: **Lecture notes, volume 1 · Preliminaries: convex sets, functions and convex functions**
 
     ---
 
-    Functions of several variables (gradient, Hessian, level sets), convex combinations and convex sets, norms, convex and concave functions, quadratic functions and their convexity. With worked examples.
+    Convex combinations and convex sets, functions of several variables (gradient, Hessian, level sets), norms, convex and concave functions, quadratic functions and their convexity. With worked examples.
 
     [:octicons-download-24: lecture-notes-1-preliminaries.pdf](pdf/lecture-notes-1-preliminaries.pdf)
 
@@ -36,7 +36,7 @@ The lecture notes and the exercise books in PDF, updated at every publication of
 
     ---
 
-    Worked exercises on functions of several variables, convex sets, convex and concave functions and quadratic functions: convexity is always proved from the definition.
+    Worked exercises on convex sets, functions of several variables, convex and concave functions and quadratic functions: convexity is always proved from the definition.
 
     [:octicons-download-24: exercises-1-preliminaries.pdf](pdf/exercises-1-preliminaries.pdf)
 

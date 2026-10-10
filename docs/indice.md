@@ -2,15 +2,15 @@
 
 ## [Preliminaries](preliminaries/index.md)
 
-1. [Functions of several variables](preliminaries/01-functions-several-variables.md)
-    - 1.1 Functions of several variables
-    - 1.2 Gradient, Hessian and level sets
-    - 1.3 Examples of functions that are not quadratic
-2. [Convex sets](preliminaries/02-convex-sets.md)
-    - 2.1 Convex combination
-    - 2.2 Convex sets
-    - 2.3 Examples of convex sets
-    - 2.4 Properties of convex sets
+1. [Convex sets](preliminaries/01-convex-sets.md)
+    - 1.1 Convex combination
+    - 1.2 Convex sets
+    - 1.3 Examples of convex sets
+    - 1.4 Properties of convex sets
+2. [Functions of several variables](preliminaries/02-functions-several-variables.md)
+    - 2.1 Functions of several variables
+    - 2.2 Gradient, Hessian and level sets
+    - 2.3 Examples of functions that are not quadratic
 3. [Convex and concave functions](preliminaries/03-convex-concave-functions.md)
     - 3.1 Convex functions
     - 3.2 Concave functions

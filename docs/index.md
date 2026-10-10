@@ -7,12 +7,14 @@ hide:
 
 <div class="hero" markdown>
 
+![Under construction: the website and the course material are still being written](img/under-construction.svg){ width="560" }
+
 # Convex Optimization
 
 Teaching material conceived and developed by **[Fabio Furini](https://fabiofurini.github.io/)**, associate
 professor at [DIAG](https://www.diag.uniroma1.it/), Sapienza University of Rome.
 
-**The course lecture notes, online**: functions of several variables, convex sets and functions,
+**The course lecture notes, online**: convex sets, functions of several variables, convex functions,
 quadratic functions, convex and concave optimization problems, with definitions, theorems
 with their proofs, examples worked out step by step and exercises with solutions.
 
@@ -55,9 +57,9 @@ lecture notes: on the website and in the PDF you find everything in the same pla
 
     ---
 
-    Functions of several variables (gradient, Hessian, level sets), convex combinations and convex sets, norms, convex and concave functions, quadratic functions and their convexity.
+    Convex combinations and convex sets, functions of several variables (gradient, Hessian, level sets), norms, convex and concave functions, quadratic functions and their convexity.
 
-    1\. Functions of several variables · 2\. Convex sets · 3\. Convex and concave functions · 4\. Quadratic functions
+    1\. Convex sets · 2\. Functions of several variables · 3\. Convex and concave functions · 4\. Quadratic functions
 
     [:octicons-arrow-right-24: The chapters](preliminaries/index.md)
 

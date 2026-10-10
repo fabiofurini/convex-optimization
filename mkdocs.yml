@@ -112,8 +112,8 @@ nav:
   - Home: index.md
   - Preliminaries:
       - preliminaries/index.md
-      - "1. Functions of several variables": preliminaries/01-functions-several-variables.md
-      - "2. Convex sets": preliminaries/02-convex-sets.md
+      - "1. Convex sets": preliminaries/01-convex-sets.md
+      - "2. Functions of several variables": preliminaries/02-functions-several-variables.md
       - "3. Convex and concave functions": preliminaries/03-convex-concave-functions.md
       - "4. Quadratic functions": preliminaries/04-quadratic-functions.md
   - Optimization problems:
@@ -122,8 +122,8 @@ nav:
       - "6. Convex and concave optimization problems": problems/06-convex-concave-problems.md
   - Exercises:
       - exercises/index.md
-      - "1. Functions of several variables": exercises/ex-01-functions-several-variables.md
-      - "2. Convex sets": exercises/ex-02-convex-sets.md
+      - "1. Convex sets": exercises/ex-01-convex-sets.md
+      - "2. Functions of several variables": exercises/ex-02-functions-several-variables.md
       - "3. Convex and concave functions": exercises/ex-03-convex-concave-functions.md
       - "4. Quadratic functions": exercises/ex-04-quadratic-functions.md
       - "5. Optimization problems": exercises/ex-05-optimization-problems.md

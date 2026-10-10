@@ -6,13 +6,13 @@ title: "Exercises · Convex sets"
 
 <div class="info-capitolo" markdown>
 
-**Exercises · Chapter 2** · each solution opens with a click · [:material-book-open-variant: Chapter 2](../preliminaries/02-convex-sets.md) · [:material-file-pdf-box: Exercises, volume 1 (PDF)](../pdf/exercises-1-preliminaries.pdf)
+**Exercises · Chapter 1** · each solution opens with a click · [:material-book-open-variant: Chapter 1](../preliminaries/01-convex-sets.md) · [:material-file-pdf-box: Exercises, volume 1 (PDF)](../pdf/exercises-1-preliminaries.pdf)
 
 </div>
 
-<a id="esercizio-2-1"></a>
+<a id="esercizio-1-1"></a>
 
-!!! esercizio "Exercise 2.1: Convex sets (E1)"
+!!! esercizio "Exercise 1.1: Convex sets (E1)"
 
     Consider the following two points in $\R^2$:
 
@@ -68,7 +68,7 @@ title: "Exercises · Convex sets"
 
     2. The set of all convex combinations of ${\boldsymbol p}$ and ${\boldsymbol w}$ is the segment joining the two points (red). The three convex combinations of the previous question are the blue points: with $\lambda=\frac{1}{3}$ the point is closer to ${\boldsymbol w}$, with $\lambda=\frac{2}{3}$ it is closer to ${\boldsymbol p}$.
 
-        ![Figure 1](../img/ex-02-convex-sets/fig01.svg){ .fig .ovale loading=lazy style="width:50%" }
+        ![Figure 1](../img/ex-01-convex-sets/fig01.svg){ .fig .ovale loading=lazy style="width:50%" }
 
     3. A point ${\boldsymbol q} \in \R^2$ is a convex combination of ${\boldsymbol p}$ and ${\boldsymbol w}$ if and only if there exists $\lambda \in [0,1]$ such that
 
@@ -84,9 +84,9 @@ title: "Exercises · Convex sets"
 
         - For ${\boldsymbol q}^{(3)}$, the first equation gives $\lambda = \frac{7-9}{6}=-\frac{1}{3}$ and the second equation holds: $1 + 3 \cdot \big(-\frac{1}{3}\big) = 0$. The point ${\boldsymbol q}^{(3)}$ is on the line through ${\boldsymbol p}$ and ${\boldsymbol w}$ (dashed in the figure), but $-\frac{1}{3} \notin [0,1]$: it is not a convex combination of ${\boldsymbol p}$ and ${\boldsymbol w}$.
 
-<a id="esercizio-2-2"></a>
+<a id="esercizio-1-2"></a>
 
-!!! esercizio "Exercise 2.2: Convex sets (E2)"
+!!! esercizio "Exercise 1.2: Convex sets (E2)"
 
     Consider the following three points in $\R^2$:
 
@@ -199,11 +199,11 @@ title: "Exercises · Convex sets"
 
     5. The convex hull of the three points is the triangle with vertices ${\boldsymbol p}^{(1)}$, ${\boldsymbol p}^{(2)}$ and ${\boldsymbol p}^{(3)}$ (red). The points of the first two questions are blue, ${\boldsymbol q}^{(1)}$ (inside the triangle) and ${\boldsymbol q}^{(2)}$ (outside the triangle) are violet.
 
-        ![Figure 2](../img/ex-02-convex-sets/fig02.svg){ .fig .ovale loading=lazy style="width:50%" }
+        ![Figure 2](../img/ex-01-convex-sets/fig02.svg){ .fig .ovale loading=lazy style="width:50%" }
 
-<a id="esercizio-2-3"></a>
+<a id="esercizio-1-3"></a>
 
-!!! esercizio "Exercise 2.3: Convex sets (E3)"
+!!! esercizio "Exercise 1.3: Convex sets (E3)"
 
     Consider the following set:
 
@@ -281,7 +281,7 @@ title: "Exercises · Convex sets"
 
         The set $F$ is the quadrilateral with vertices $\begin{pmatrix} 0 \\[0.3ex] 0 \end{pmatrix}$, $\begin{pmatrix} 3 \\[0.3ex] 0 \end{pmatrix}$, $\begin{pmatrix} 2 \\[0.3ex] 3 \end{pmatrix}$ and $\begin{pmatrix} 0 \\[0.3ex] 4 \end{pmatrix}$ (red). The figure also shows the segment joining ${\boldsymbol p}$ and ${\boldsymbol w}$ (blue) and the convex combination of the next question.
 
-        ![Figure 3](../img/ex-02-convex-sets/fig03.svg){ .fig .ovale loading=lazy style="width:50%" }
+        ![Figure 3](../img/ex-01-convex-sets/fig03.svg){ .fig .ovale loading=lazy style="width:50%" }
 
     3. The convex combination of ${\boldsymbol p}$ and ${\boldsymbol w}$ with $\lambda = \frac{1}{3}$ is the point:
 
@@ -302,9 +302,9 @@ title: "Exercises · Convex sets"
         \frac{4}{3} \ge 0.
         $$
 
-<a id="esercizio-2-4"></a>
+<a id="esercizio-1-4"></a>
 
-!!! esercizio "Exercise 2.4: Convex sets (E4)"
+!!! esercizio "Exercise 1.4: Convex sets (E4)"
 
     Consider the following symmetric matrix
 
@@ -424,11 +424,11 @@ title: "Exercises · Convex sets"
 
         The set $F$ is the region inside (and on) an ellipse whose axes are the lines $x_2 = x_1$ and $x_2 = -x_1$ (red). The figure shows the reference points (black), the point $\big(\frac{1}{2},\frac{1}{2}\big)$ that belongs to $F$ (blue) and the point $\big(\frac{1}{2},-\frac{1}{2}\big)$ that does not belong to $F$ (violet).
 
-        ![Figure 4](../img/ex-02-convex-sets/fig04.svg){ .fig .ovale loading=lazy style="width:50%" }
+        ![Figure 4](../img/ex-01-convex-sets/fig04.svg){ .fig .ovale loading=lazy style="width:50%" }
 
-<a id="esercizio-2-5"></a>
+<a id="esercizio-1-5"></a>
 
-!!! esercizio "Exercise 2.5: Convex sets (E5)"
+!!! esercizio "Exercise 1.5: Convex sets (E5)"
 
     Consider the following sets:
 
@@ -454,9 +454,9 @@ title: "Exercises · Convex sets"
 
     1. The set $A$ is the ring between the circle of radius $1$ and the circle of radius $2$ centered at the origin (red, left). The set $B$ is the L-shaped union of the rectangles $B_1$ and $B_2$ (red, right). The figures also show the segments used in the next questions (blue), whose midpoint (violet) does not belong to the set.
 
-        ![Figure 5](../img/ex-02-convex-sets/fig05.svg){ .fig .ovale loading=lazy style="width:50%" }
+        ![Figure 5](../img/ex-01-convex-sets/fig05.svg){ .fig .ovale loading=lazy style="width:50%" }
 
-        ![Figure 6](../img/ex-02-convex-sets/fig06.svg){ .fig .ovale loading=lazy style="width:50%" }
+        ![Figure 6](../img/ex-01-convex-sets/fig06.svg){ .fig .ovale loading=lazy style="width:50%" }
 
     2. To show that a set is not convex, it is enough to find two points of the set and one scalar $\lambda \in [0,1]$ whose convex combination does not belong to the set. Take
 

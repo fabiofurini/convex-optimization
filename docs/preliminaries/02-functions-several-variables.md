@@ -6,15 +6,15 @@ title: "Functions of several variables"
 
 <div class="info-capitolo" markdown>
 
-**Part 1 · Preliminaries · Chapter 1** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](../pdf/lecture-notes-1-preliminaries.pdf) · [:material-pencil: Exercises](../exercises/ex-01-functions-several-variables.md)
+**Part 1 · Preliminaries · Chapter 2** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](../pdf/lecture-notes-1-preliminaries.pdf) · [:material-pencil: Exercises](../exercises/ex-02-functions-several-variables.md)
 
 </div>
 
-## 1.1 Functions of several variables
+## 2.1 Functions of several variables
 
 <a id="box-1-def-function"></a>
 
-!!! definizione "Definition 1.1: function of several real variables"
+!!! definizione "Definition 2.1: function of several real variables"
 
     The function:
 
@@ -39,7 +39,7 @@ title: "Functions of several variables"
 
 <a id="box-2-exThree"></a>
 
-!!! esempio "Example 1.1: a function of three variables"
+!!! esempio "Example 2.1: a function of three variables"
 
     Consider the function:
 
@@ -53,11 +53,11 @@ title: "Functions of several variables"
     f\left(\begin{pmatrix} 2 \\ -1 \\ 3 \end{pmatrix}\right) = 2 \cdot (-1) + 3^2 = -2 + 9 = 7
     $$
 
-## 1.2 Gradient, Hessian and level sets
+## 2.2 Gradient, Hessian and level sets
 
 <a id="box-3-def-gradient"></a>
 
-!!! definizione "Definition 1.2: gradient"
+!!! definizione "Definition 2.2: gradient"
 
     Given $f:D\subseteq \R^n \to \R$, the <strong>gradient</strong> $\nabla f(\boldsymbol x)$ of $f$ at $\boldsymbol x$ is the (column) vector of first-order partial derivatives:
 
@@ -77,7 +77,7 @@ title: "Functions of several variables"
 
 <a id="box-4-def-hessian"></a>
 
-!!! definizione "Definition 1.3: Hessian"
+!!! definizione "Definition 2.3: Hessian"
 
     Given a function $f:D\subseteq \R^n \to \R$, the <strong>Hessian</strong> $\nabla^2 f(\boldsymbol x)$ of $f$ at $\boldsymbol x$ is the matrix of second-order partial derivatives:
 
@@ -101,7 +101,7 @@ title: "Functions of several variables"
 
 <a id="box-5-def-levelset"></a>
 
-!!! definizione "Definition 1.4: level set"
+!!! definizione "Definition 2.4: level set"
 
     Given a function $f:D\subseteq \R^n \to \R$ and a constant $k\in\R$, the <strong>level set</strong> $L(k)$ of $f$ at level $k$ is:
 
@@ -115,7 +115,7 @@ title: "Functions of several variables"
 
 <a id="box-6-exQuadratic"></a>
 
-!!! esempio "Example 1.2: gradient, Hessian and level sets of a quadratic function"
+!!! esempio "Example 2.2: gradient, Hessian and level sets of a quadratic function"
 
     Consider the quadratic function:
 
@@ -188,25 +188,25 @@ title: "Functions of several variables"
 
 <a id="box-7-exQuadraticFigure"></a>
 
-!!! esempio "Example 1.3: graph, level sets and gradients of a quadratic function"
+!!! esempio "Example 2.3: graph, level sets and gradients of a quadratic function"
 
     For the function of the previous example, this is the graph in the domain $[-4,4]\times[-4,4]$; its lowest point is at $\begin{pmatrix} 2 \\ 2 \end{pmatrix}$, where $f = 1$, and its highest point is at $\begin{pmatrix} -4 \\ -4 \end{pmatrix}$, where $f = 73$:
 
-    ![Figure 1](../img/01-functions-several-variables/fig01.png){ .fig .ovale loading=lazy style="width:59%" }
+    ![Figure 1](../img/02-functions-several-variables/fig01.png){ .fig .ovale loading=lazy style="width:59%" }
 
     The following figure shows the level sets $L(2)$ (circle of radius $1$, in blue) and $L(17)$ (circle of radius $4$, in orange), and the two gradients of the previous example (in red), drawn from the points $\begin{pmatrix} 3 \\ 2 \end{pmatrix}$ and $\begin{pmatrix} 2 \\ 3 \end{pmatrix}$ of the level set $L(2)$:
 
-    ![Figure 2](../img/01-functions-several-variables/fig02.svg){ .fig .ovale loading=lazy style="width:50%" }
+    ![Figure 2](../img/02-functions-several-variables/fig02.svg){ .fig .ovale loading=lazy style="width:50%" }
 
     The gradient vectors are perpendicular to the level sets and point in the direction of maximum increase of the function (away from the center).
 
-## 1.3 Examples of functions that are not quadratic
+## 2.3 Examples of functions that are not quadratic
 
 - For a quadratic function the Hessian is constant (chapter «Quadratic functions»). In general, the Hessian depends on the point, as in the following two examples.
 
 <a id="box-8-exCubic"></a>
 
-!!! esempio "Example 1.4: gradient and Hessian of a cubic function"
+!!! esempio "Example 2.4: gradient and Hessian of a cubic function"
 
     Consider the function:
 
@@ -244,7 +244,7 @@ title: "Functions of several variables"
 
 <a id="box-9-exExponential"></a>
 
-!!! esempio "Example 1.5: gradient, Hessian and a level set of an exponential function"
+!!! esempio "Example 2.5: gradient, Hessian and a level set of an exponential function"
 
     Consider the function:
 
@@ -280,7 +280,7 @@ title: "Functions of several variables"
 
     The following figure shows the level set $L(2)$ (in blue) and the two gradient vectors (in red):
 
-    ![Figure 3](../img/01-functions-several-variables/fig03.svg){ .fig .ovale loading=lazy style="width:50%" }
+    ![Figure 3](../img/02-functions-several-variables/fig03.svg){ .fig .ovale loading=lazy style="width:50%" }
 
     The tangent direction of the level set at $\begin{pmatrix} 0 \\ 1 \end{pmatrix}$ is $\begin{pmatrix} -2 \\ 1 \end{pmatrix}$ (the derivative of $x_1 = \ln(2-x_2^2)$ with respect to $x_2$ is $\frac{-2\,x_2}{2-x_2^2}$, equal to $-2$ at $x_2=1$), and indeed:
 
