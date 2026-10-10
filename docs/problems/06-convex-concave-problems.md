@@ -22,13 +22,13 @@ title: "Convex and concave optimization problems"
 
     - if the objective function is concave over the feasible region, then the problem is called a <strong>concave optimization problem</strong>.
 
-- The definitions of convex and concave function of the chapter «Convex and concave functions» require a convex domain: if the objective function is convex or concave over the feasible region, then the feasible region is a convex set.
-
-- The feasible region is often described by a finite number of constraints, $F = \{\, {\boldsymbol x} \in \R^n : g_i({\boldsymbol x}) \le 0, ~ i \in \{1,2,\dots,m\} \,\}$. If every function $g_i$ is convex, then $F$ is a convex set, by the property of the sets defined by convex functions of the chapter «Convex and concave functions». For instance, the interval $[a,b] = \{\, x \in \R : a - x \le 0, ~ x - b \le 0 \,\}$ is defined by two linear, hence convex, functions.
-
 - In the figures of this chapter, as in the chapter «Optimization problems», the graph of the objective function over the feasible region is red, the feasible region is the red part of the $x$-axis and the optimal solutions are blue. Examples of a convex minimization problem and of a concave maximization problem with the feasible region $[a,b] \subseteq \R$:
 
 ![Figure 1](../img/06-convex-concave-problems/fig01.svg){ .fig .ovale loading=lazy style="width:88%" }
+
+- The definitions of convex and concave function of the chapter «Convex and concave functions» require a convex domain: if the objective function is convex or concave over the feasible region, then the feasible region is a convex set.
+
+- The feasible region is often described by a finite number of constraints, $F = \{\, {\boldsymbol x} \in \R^n : g_i({\boldsymbol x}) \le 0, ~ i \in \{1,2,\dots,m\} \,\}$. If every function $g_i$ is convex, then $F$ is a convex set, by the property of the sets defined by convex functions of the chapter «Convex and concave functions». For instance, the interval $[a,b] = \{\, x \in \R : a - x \le 0, ~ x - b \le 0 \,\}$ is defined by two linear, hence convex, functions.
 
 ## 6.2 Local optima of convex and concave problems
 
@@ -297,15 +297,20 @@ title: "Convex and concave optimization problems"
 
     - <strong>Feasible region.</strong> The feasible region $F=[2,4]$ is an interval, hence a convex set.
 
-    - <strong>Objective function.</strong> For every pair of points $p,w \in F$, let $a = p-2$ and $b = w-2$, so that $a \ge 0$, $b \ge 0$, $f(p) = a^3 - 3a + 4$ and $f(w) = b^3 - 3b + 4$. For every $\lambda \in [0,1]$, since $\lambda p+(1-\lambda)w - 2 = \lambda a + (1-\lambda) b$, we have:
+    - <strong>Objective function.</strong> For every pair of points $p,w \in F$ and every $\lambda \in [0,1]$, with $a = p-2 \ge 0$ and $b = w-2 \ge 0$, we have:
 
         \begin{align*}
         f\big(\lambda p+(1-\lambda)w\big)
-        &= \big(\lambda a+(1-\lambda)b\big)^3 - 3\big(\lambda a+(1-\lambda)b\big) + \lambda\,4 + (1-\lambda)\,4 \\[2ex]
+        &= \big(\lambda p+(1-\lambda)w-2\big)^3 - 3\big(\lambda p+(1-\lambda)w-2\big) + 4 \\[1ex]
+        &\qquad \text{(since } f(x) = (x-2)^3 - 3\,(x-2) + 4 \text{)} \\[2ex]
+        &= \big(\lambda a+(1-\lambda)b\big)^3 - 3\big(\lambda a+(1-\lambda)b\big) + \lambda\,4 + (1-\lambda)\,4 \\[1ex]
+        &\qquad \text{(since } \lambda p+(1-\lambda)w - 2 = \lambda a + (1-\lambda) b \text{,} \\
+        &\qquad \phantom{\text{(}}\text{and } \lambda + (1-\lambda) = 1 \text{)} \\[2ex]
         &\le \lambda a^3+(1-\lambda)b^3 - 3\big(\lambda a+(1-\lambda)b\big) + \lambda\,4 + (1-\lambda)\,4 \\[1ex]
         &\qquad \text{(by the previous observation, since } a \ge 0 \text{ and } b \ge 0) \\[2ex]
         &= \lambda \big(a^3-3a+4\big)+(1-\lambda)\big(b^3-3b+4\big) \\[2ex]
-        &= \lambda f(p)+(1-\lambda)f(w)
+        &= \lambda f(p)+(1-\lambda)f(w) \\[1ex]
+        &\qquad \text{(since } f(p) = a^3-3a+4 \text{ and } f(w) = b^3-3b+4 \text{)}
         \end{align*}
 
         Therefore,
@@ -356,15 +361,20 @@ title: "Convex and concave optimization problems"
 
     - <strong>Feasible region.</strong> The feasible region $F=[0,2]$ is an interval, hence a convex set.
 
-    - <strong>Objective function.</strong> For every pair of points $p,w \in F$, let $a = p-2$ and $b = w-2$, so that $a \le 0$, $b \le 0$, $f(p) = a^3 - 3a + 4$ and $f(w) = b^3 - 3b + 4$. For every $\lambda \in [0,1]$, since $\lambda p+(1-\lambda)w - 2 = \lambda a + (1-\lambda) b$, we have:
+    - <strong>Objective function.</strong> For every pair of points $p,w \in F$ and every $\lambda \in [0,1]$, with $a = p-2 \le 0$ and $b = w-2 \le 0$, we have:
 
         \begin{align*}
         f\big(\lambda p+(1-\lambda)w\big)
-        &= \big(\lambda a+(1-\lambda)b\big)^3 - 3\big(\lambda a+(1-\lambda)b\big) + \lambda\,4 + (1-\lambda)\,4 \\[2ex]
+        &= \big(\lambda p+(1-\lambda)w-2\big)^3 - 3\big(\lambda p+(1-\lambda)w-2\big) + 4 \\[1ex]
+        &\qquad \text{(since } f(x) = (x-2)^3 - 3\,(x-2) + 4 \text{)} \\[2ex]
+        &= \big(\lambda a+(1-\lambda)b\big)^3 - 3\big(\lambda a+(1-\lambda)b\big) + \lambda\,4 + (1-\lambda)\,4 \\[1ex]
+        &\qquad \text{(since } \lambda p+(1-\lambda)w - 2 = \lambda a + (1-\lambda) b \text{,} \\
+        &\qquad \phantom{\text{(}}\text{and } \lambda + (1-\lambda) = 1 \text{)} \\[2ex]
         &\ge \lambda a^3+(1-\lambda)b^3 - 3\big(\lambda a+(1-\lambda)b\big) + \lambda\,4 + (1-\lambda)\,4 \\[1ex]
         &\qquad \text{(by the previous observation, since } a \le 0 \text{ and } b \le 0) \\[2ex]
         &= \lambda \big(a^3-3a+4\big)+(1-\lambda)\big(b^3-3b+4\big) \\[2ex]
-        &= \lambda f(p)+(1-\lambda)f(w)
+        &= \lambda f(p)+(1-\lambda)f(w) \\[1ex]
+        &\qquad \text{(since } f(p) = a^3-3a+4 \text{ and } f(w) = b^3-3b+4 \text{)}
         \end{align*}
 
         Therefore,

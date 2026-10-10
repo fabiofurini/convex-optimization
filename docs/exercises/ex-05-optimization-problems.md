@@ -10,6 +10,8 @@ title: "Exercises · Optimization problems"
 
 </div>
 
+## Problems in one variable
+
 <a id="esercizio-5-1"></a>
 
 !!! esercizio "Exercise 5.1: Optimization problem (E1)"
@@ -435,65 +437,7 @@ title: "Exercises · Optimization problems"
 
 <a id="esercizio-5-8"></a>
 
-!!! esercizio "Exercise 5.8: Optimization problem (E8)"
-
-    Consider the following objective function of two variables and feasible region:
-
-    $$
-    f:\R^2 \to \R,~ f: \begin{pmatrix}x_1\\x_2\end{pmatrix} \mapsto (x_1 - x_2)^2
-    $$
-
-    and
-
-    $$
-    F=\{\, \boldsymbol x \in \R^2 : 0 \le x_1 \le 2,~ 0 \le x_2 \le 2 \,\} = [0,2]\times[0,2].
-    $$
-
-    **Questions**
-
-    1. Write the associated optimization problems in minimization and maximization forms.
-
-    2. Draw the feasible region and the level curves of the objective function with values $0$, $1$ and $4$.
-
-    3. Find all optimal solutions and the optimal value for both forms.
-
-??? soluzione "Solution"
-
-    1. The associated optimization problems in minimization and maximization forms are:
-
-        \begin{equation*}
-        \min \bigg\{\, (x_1 - x_2)^2 \ \text{ subject to } 0 \le x_1 \le 2,~ 0 \le x_2 \le 2 \,\bigg\}
-        \end{equation*}
-
-        \begin{equation*}
-        \max \bigg\{\, (x_1 - x_2)^2 \ \text{ subject to } 0 \le x_1 \le 2,~ 0 \le x_2 \le 2 \,\bigg\}
-        \end{equation*}
-
-    2. The feasible region is the red square. Since $f(\boldsymbol x) = c$ if and only if $x_1 - x_2 = \sqrt{c}$ or $x_1 - x_2 = -\sqrt{c}$, the level curves are straight lines parallel to the line $x_1 = x_2$: the level curve with value $0$ is the line $x_1 = x_2$, the one with value $1$ is made of the two lines $x_1 - x_2 = \pm 1$ (dashed), and the one with value $4$ is made of the two lines $x_1 - x_2 = \pm 2$, which touch the square only at its corners $(2,0)$ and $(0,2)$. The optimal solutions are blue.
-
-        ![Figure 8](../img/ex-05-optimization-problems/fig08.svg){ .fig .ovale loading=lazy style="width:50%" }
-
-    3. The feasible region is the square $F=[0,2]\times[0,2]$.
-
-        - For the minimization form, $f(\boldsymbol x) = (x_1 - x_2)^2 \ge 0$ for every feasible $\boldsymbol x$, with equality exactly when $x_1 = x_2$. The problem has <strong>infinitely many</strong> optimal solutions (the blue diagonal of the square) and the optimal value is:
-
-            $$
-            \argmin \big\{\, (x_1 - x_2)^2 \ \text{ subject to } \boldsymbol x \in F \,\big\} = \left\{ \begin{pmatrix} t\\ t \end{pmatrix} : 0 \le t \le 2 \right\}
-            \quad \text{and} \quad
-            z(P) = 0.
-            $$
-
-        - For the maximization form, for every feasible $\boldsymbol x$ we have $0 \le x_1 \le 2$ and $-2 \le -x_2 \le 0$, so $-2 \le x_1 - x_2 \le 2$ and $f(\boldsymbol x) \le 4$. The equality $x_1 - x_2 = 2$ holds only for $x_1 = 2$ and $x_2 = 0$, and $x_1 - x_2 = -2$ only for $x_1 = 0$ and $x_2 = 2$. The problem has <strong>two</strong> optimal solutions and the optimal value is:
-
-            $$
-            \argmax \big\{\, (x_1 - x_2)^2 \ \text{ subject to } \boldsymbol x \in F \,\big\} = \left\{ \begin{pmatrix} 2\\ 0 \end{pmatrix},\, \begin{pmatrix} 0\\ 2 \end{pmatrix} \right\}
-            \quad \text{and} \quad
-            z(P) = 4.
-            $$
-
-<a id="esercizio-5-9"></a>
-
-!!! esercizio "Exercise 5.9: Optimization problem (E9)"
+!!! esercizio "Exercise 5.8: Optimization problem (E9)"
 
     Consider the following linear objective function and feasible region:
 
@@ -525,7 +469,7 @@ title: "Exercises · Optimization problems"
 
     2. The graph of the objective function over the feasible region is red; the feasible region is the red part of the $x$-axis and the optimal solutions are marked in blue. The point $x=3$ does not belong to the feasible region: the empty circles mark the excluded endpoint of the feasible region and of the graph.
 
-        ![Figure 9](../img/ex-05-optimization-problems/fig09.svg){ .fig .ovale loading=lazy style="width:50%" }
+        ![Figure 8](../img/ex-05-optimization-problems/fig08.svg){ .fig .ovale loading=lazy style="width:50%" }
 
     3. The feasible region is the interval $F=[0,3)$, which contains $0$ but not $3$, and the linear function $f$ is strictly increasing.
 
@@ -551,9 +495,9 @@ title: "Exercises · Optimization problems"
             z(P) \text{ is not defined}.
             $$
 
-<a id="esercizio-5-10"></a>
+<a id="esercizio-5-9"></a>
 
-!!! esercizio "Exercise 5.10: Optimization problem (E10)"
+!!! esercizio "Exercise 5.9: Optimization problem (E10)"
 
     Consider the following function:
 
@@ -621,11 +565,11 @@ title: "Exercises · Optimization problems"
 
     4. The graph of the function is red; the domain is the red part of the $x$-axis, the points of (global) minimum and maximum are blue and the points of local minimum or maximum that are not global are violet. Since $f$ takes negative values, the $x$-axis is drawn at the bottom of the figure.
 
-        ![Figure 10](../img/ex-05-optimization-problems/fig10.svg){ .fig .ovale loading=lazy style="width:50%" }
+        ![Figure 9](../img/ex-05-optimization-problems/fig09.svg){ .fig .ovale loading=lazy style="width:50%" }
 
-<a id="esercizio-5-11"></a>
+<a id="esercizio-5-10"></a>
 
-!!! esercizio "Exercise 5.11: Optimization problem (E11)"
+!!! esercizio "Exercise 5.10: Optimization problem (E11)"
 
     Consider the following function:
 
@@ -693,11 +637,11 @@ title: "Exercises · Optimization problems"
 
     4. The graph of the function is red; the domain is the red part of the $x$-axis, the points of (global) minimum and maximum are blue and the points of local minimum or maximum that are not global are violet.
 
-        ![Figure 11](../img/ex-05-optimization-problems/fig11.svg){ .fig .ovale loading=lazy style="width:50%" }
+        ![Figure 10](../img/ex-05-optimization-problems/fig10.svg){ .fig .ovale loading=lazy style="width:50%" }
 
-<a id="esercizio-5-12"></a>
+<a id="esercizio-5-11"></a>
 
-!!! esercizio "Exercise 5.12: Optimization problem (E12)"
+!!! esercizio "Exercise 5.11: Optimization problem (E12)"
 
     Consider the following function:
 
@@ -755,13 +699,13 @@ title: "Exercises · Optimization problems"
 
         with equality only for $x=-1$ and only for $x=2$, respectively. The unique point of maximum is $x=-1$, with maximum $8$, and the unique point of minimum is $x=2$, with minimum $-19$: both points of the first two questions are global optima.
 
-    4. The graph of the function is red; the domain is the red part of the $x$-axis, the points of (global) minimum and maximum are blue and the points of local minimum or maximum that are not global are violet. Since $f$ takes negative values, the $x$-axis is drawn at the bottom of the figure. At the endpoints we have $f(-2) = -3$ and $f(3) = -8$.
+    4. The graph of the function is red; the domain is the red part of the $x$-axis, the points of (global) minimum and maximum are blue. Since $f$ takes negative values, the $x$-axis is drawn at the bottom of the figure. At the endpoints we have $f(-2) = -3$ and $f(3) = -8$.
 
-        ![Figure 12](../img/ex-05-optimization-problems/fig12.svg){ .fig .ovale loading=lazy style="width:50%" }
+        ![Figure 11](../img/ex-05-optimization-problems/fig11.svg){ .fig .ovale loading=lazy style="width:50%" }
 
-<a id="esercizio-5-13"></a>
+<a id="esercizio-5-12"></a>
 
-!!! esercizio "Exercise 5.13: Optimization problem (E13)"
+!!! esercizio "Exercise 5.12: Optimization problem (E13)"
 
     Consider the following function:
 
@@ -837,11 +781,11 @@ title: "Exercises · Optimization problems"
 
     5. The graph of the function in the interval $[-2,2]$ is red and the interval $[-2,2]$, which is a part of the domain, is the red part of the $x$-axis; the points of (global) minimum are blue and the point of local maximum that is not global is violet. The point of maximum $x=3$, with $f(3)=66$, is outside the figure.
 
-        ![Figure 13](../img/ex-05-optimization-problems/fig13.svg){ .fig .ovale loading=lazy style="width:50%" }
+        ![Figure 12](../img/ex-05-optimization-problems/fig12.svg){ .fig .ovale loading=lazy style="width:50%" }
 
-<a id="esercizio-5-14"></a>
+<a id="esercizio-5-13"></a>
 
-!!! esercizio "Exercise 5.14: Optimization problem (E14)"
+!!! esercizio "Exercise 5.13: Optimization problem (E14)"
 
     Consider the following function:
 
@@ -909,11 +853,11 @@ title: "Exercises · Optimization problems"
 
     4. The graph of the function is red; the domain is the red part of the $x$-axis, the points of (global) minimum and maximum are blue and the points of local minimum or maximum that are not global are violet. Since $f$ takes negative values, the $x$-axis is drawn at the bottom of the figure.
 
-        ![Figure 14](../img/ex-05-optimization-problems/fig14.svg){ .fig .ovale loading=lazy style="width:50%" }
+        ![Figure 13](../img/ex-05-optimization-problems/fig13.svg){ .fig .ovale loading=lazy style="width:50%" }
 
-<a id="esercizio-5-15"></a>
+<a id="esercizio-5-14"></a>
 
-!!! esercizio "Exercise 5.15: Optimization problem (E15)"
+!!! esercizio "Exercise 5.14: Optimization problem (E15)"
 
     Consider the following function:
 
@@ -971,9 +915,69 @@ title: "Exercises · Optimization problems"
 
         with equality only for $x=-1$ and only for $x=2$, respectively. The unique point of maximum is $x=-1$, with maximum $12$, and the unique point of minimum is $x=2$, with minimum $-15$: both points of the first two questions are global optima.
 
-    4. The graph of the function is red; the domain is the red part of the $x$-axis, the points of (global) minimum and maximum are blue and the points of local minimum or maximum that are not global are violet. Since $f$ takes negative values, the $x$-axis is drawn at the bottom of the figure. At the right endpoint we have $f(3) = -4$.
+    4. The graph of the function is red; the domain is the red part of the $x$-axis, the points of (global) minimum and maximum are blue. Since $f$ takes negative values, the $x$-axis is drawn at the bottom of the figure. At the right endpoint we have $f(3) = -4$.
+
+        ![Figure 14](../img/ex-05-optimization-problems/fig14.svg){ .fig .ovale loading=lazy style="width:50%" }
+
+## Problems in two variables
+
+<a id="esercizio-5-15"></a>
+
+!!! esercizio "Exercise 5.15: Optimization problem (E8)"
+
+    Consider the following objective function of two variables and feasible region:
+
+    $$
+    f:\R^2 \to \R,~ f: \begin{pmatrix}x_1\\x_2\end{pmatrix} \mapsto (x_1 - x_2)^2
+    $$
+
+    and
+
+    $$
+    F=\{\, \boldsymbol x \in \R^2 : 0 \le x_1 \le 2,~ 0 \le x_2 \le 2 \,\} = [0,2]\times[0,2].
+    $$
+
+    **Questions**
+
+    1. Write the associated optimization problems in minimization and maximization forms.
+
+    2. Draw the feasible region and the level curves of the objective function with values $0$, $1$ and $4$.
+
+    3. Find all optimal solutions and the optimal value for both forms.
+
+??? soluzione "Solution"
+
+    1. The associated optimization problems in minimization and maximization forms are:
+
+        \begin{equation*}
+        \min \bigg\{\, (x_1 - x_2)^2 \ \text{ subject to } 0 \le x_1 \le 2,~ 0 \le x_2 \le 2 \,\bigg\}
+        \end{equation*}
+
+        \begin{equation*}
+        \max \bigg\{\, (x_1 - x_2)^2 \ \text{ subject to } 0 \le x_1 \le 2,~ 0 \le x_2 \le 2 \,\bigg\}
+        \end{equation*}
+
+    2. The feasible region is the red square. Since $f(\boldsymbol x) = c$ if and only if $x_1 - x_2 = \sqrt{c}$ or $x_1 - x_2 = -\sqrt{c}$, the level curves are straight lines parallel to the line $x_1 = x_2$: the level curve with value $0$ is the line $x_1 = x_2$, the one with value $1$ is made of the two lines $x_1 - x_2 = \pm 1$ (dashed), and the one with value $4$ is made of the two lines $x_1 - x_2 = \pm 2$, which touch the square only at its corners $(2,0)$ and $(0,2)$. The optimal solutions are blue.
 
         ![Figure 15](../img/ex-05-optimization-problems/fig15.svg){ .fig .ovale loading=lazy style="width:50%" }
+
+    3. The feasible region is the square $F=[0,2]\times[0,2]$.
+
+        - For the minimization form, $f(\boldsymbol x) = (x_1 - x_2)^2 \ge 0$ for every feasible $\boldsymbol x$, with equality exactly when $x_1 = x_2$. The problem has <strong>infinitely many</strong> optimal solutions (the blue diagonal of the square) and the optimal value is:
+
+            $$
+            \argmin \big\{\, (x_1 - x_2)^2 \ \text{ subject to } \boldsymbol x \in F \,\big\} = \left\{ \begin{pmatrix} t\\ t \end{pmatrix} : 0 \le t \le 2 \right\}
+            \quad \text{and} \quad
+            z(P) = 0.
+            $$
+
+        - For the maximization form, for every feasible $\boldsymbol x$ we have $0 \le x_1 \le 2$ and $-2 \le -x_2 \le 0$, so $-2 \le x_1 - x_2 \le 2$ and $f(\boldsymbol x) \le 4$. The equality $x_1 - x_2 = 2$ holds only for $x_1 = 2$ and $x_2 = 0$, and $x_1 - x_2 = -2$ only for $x_1 = 0$ and $x_2 = 2$. The problem has <strong>two</strong> optimal solutions and the optimal value is:
+
+            $$
+            \argmax \big\{\, (x_1 - x_2)^2 \ \text{ subject to } \boldsymbol x \in F \,\big\} = \left\{ \begin{pmatrix} 2\\ 0 \end{pmatrix},\, \begin{pmatrix} 0\\ 2 \end{pmatrix} \right\}
+            \quad \text{and} \quad
+            z(P) = 4.
+            $$
 
 <a id="esercizio-5-16"></a>
 
@@ -1031,7 +1035,7 @@ title: "Exercises · Optimization problems"
 
         with equality only for $x_1 = x_2 = 2$, and $\begin{pmatrix}2\\2\end{pmatrix}$ is the unique point of maximum of $f$ in $D$, with maximum $4$.
 
-    3. The graph of the function is the surface over the domain $D$, which is the red rectangle drawn on the bottom plane; the points of the graph corresponding to the point of minimum and to the point of maximum are blue, with a dashed segment that joins them to the bottom plane.
+    3. The graph of the function is the surface over the domain $D$, which is the red square drawn on the bottom plane; the points of the graph corresponding to the point of minimum and to the point of maximum are blue, with a dashed segment that joins them to the bottom plane.
 
         ![Figure 16](../img/ex-05-optimization-problems/fig16.svg){ .fig .ovale loading=lazy style="width:59%" }
 
@@ -1086,7 +1090,7 @@ title: "Exercises · Optimization problems"
 
             and $\begin{pmatrix}-4\\-4\end{pmatrix}$ is the unique point of maximum of $f$ in $D$, with maximum $73$.
 
-    3. The graph of the function is the surface over the domain $D$, which is the red rectangle drawn on the bottom plane; the points of the graph corresponding to the point of minimum and to the point of maximum are blue, with a dashed segment that joins them to the bottom plane.
+    3. The graph of the function is the surface over the domain $D$, which is the red square drawn on the bottom plane; the points of the graph corresponding to the point of minimum and to the point of maximum are blue, with a dashed segment that joins them to the bottom plane.
 
         ![Figure 17](../img/ex-05-optimization-problems/fig17.png){ .fig .ovale loading=lazy style="width:59%" }
 
@@ -1166,7 +1170,7 @@ title: "Exercises · Optimization problems"
 
         The point of local minimum $\begin{pmatrix}0\\0\end{pmatrix}$ is not a point of (global) minimum, since $-\frac{86}{5} < 2$.
 
-    3. The graph of the function is the surface over the domain $D$, which is the red rectangle drawn on the bottom plane; the points of the graph corresponding to the four points of minimum are blue and the point corresponding to the point of local minimum that is not global is violet, with a dashed segment that joins them to the bottom plane.
+    3. The graph of the function is the surface over the domain $D$, which is the red square drawn on the bottom plane; the points of the graph corresponding to the four points of minimum are blue and the point corresponding to the point of local minimum that is not global is violet, with a dashed segment that joins them to the bottom plane.
 
         ![Figure 18](../img/ex-05-optimization-problems/fig18.png){ .fig .ovale loading=lazy style="width:59%" }
 
@@ -1233,7 +1237,7 @@ title: "Exercises · Optimization problems"
         = \left\{ \begin{pmatrix}-3\\-3\end{pmatrix},\begin{pmatrix}-3\\3\end{pmatrix},\begin{pmatrix}3\\-3\end{pmatrix},\begin{pmatrix}3\\3\end{pmatrix} \right\}.
         $$
 
-    3. The graph of the function is the surface over the domain $D$, which is the red rectangle drawn on the bottom plane; the points of the graph corresponding to the four points of minimum are blue and the point corresponding to the point of local minimum that is not global is violet, with a dashed segment that joins them to the bottom plane.
+    3. The graph of the function is the surface over the domain $D$, which is the red square drawn on the bottom plane; the points of the graph corresponding to the four points of minimum are blue and the point corresponding to the point of local minimum that is not global is violet, with a dashed segment that joins them to the bottom plane.
 
         ![Figure 19](../img/ex-05-optimization-problems/fig19.png){ .fig .ovale loading=lazy style="width:59%" }
 
@@ -1285,7 +1289,7 @@ title: "Exercises · Optimization problems"
 
         where $x_1^2 + 3x_1 + 12 = \big(x_1 + \frac{3}{2}\big)^2 + \frac{39}{4} > 0$. For every $\begin{pmatrix}x_1\\x_2\end{pmatrix}\in D$ we have $4 - x_1 \ge 0$, so $f({\boldsymbol x}) \ge -48$, with equality only for $x_1 = 4$ and $x_2 = 0$. The point $\begin{pmatrix}4\\0\end{pmatrix}$ is the unique point of minimum of $f$ in $D$ and the minimum is $-48$.
 
-    3. The graph of the function is the surface over the domain $D$, which is the red rectangle drawn on the bottom plane; the points of the graph corresponding to the point of minimum are blue and the point corresponding to the point of local minimum that is not global is violet, with a dashed segment that joins them to the bottom plane.
+    3. The graph of the function is the surface over the domain $D$, which is the red square drawn on the bottom plane; the point of the graph corresponding to the point of minimum is blue and the point corresponding to the point of local minimum that is not global is violet, with a dashed segment that joins them to the bottom plane.
 
         ![Figure 20](../img/ex-05-optimization-problems/fig20.png){ .fig .ovale loading=lazy style="width:59%" }
 
@@ -1352,7 +1356,7 @@ title: "Exercises · Optimization problems"
         = \left\{ \begin{pmatrix}\frac{9}{2}\\-3\end{pmatrix},\begin{pmatrix}\frac{9}{2}\\3\end{pmatrix} \right\}.
         $$
 
-    3. The graph of the function is the surface over the domain $D$, which is the red rectangle drawn on the bottom plane; the points of the graph corresponding to the two points of minimum are blue and the point corresponding to the point of local minimum that is not global is violet, with a dashed segment that joins them to the bottom plane.
+    3. The graph of the function is the surface over the domain $D$, which is the red square drawn on the bottom plane; the points of the graph corresponding to the two points of minimum are blue and the point corresponding to the point of local minimum that is not global is violet, with a dashed segment that joins them to the bottom plane.
 
         ![Figure 21](../img/ex-05-optimization-problems/fig21.png){ .fig .ovale loading=lazy style="width:59%" }
 
@@ -1407,7 +1411,7 @@ title: "Exercises · Optimization problems"
 
             and $\begin{pmatrix}-4\\-4\end{pmatrix}$ is the unique point of minimum of $f$ in $D$, with minimum $-67$.
 
-    3. The graph of the function is the surface over the domain $D$, which is the red rectangle drawn on the bottom plane; the points of the graph corresponding to the point of maximum and to the point of minimum are blue, with a dashed segment that joins them to the bottom plane.
+    3. The graph of the function is the surface over the domain $D$, which is the red square drawn on the bottom plane; the points of the graph corresponding to the point of maximum and to the point of minimum are blue, with a dashed segment that joins them to the bottom plane.
 
         ![Figure 22](../img/ex-05-optimization-problems/fig22.png){ .fig .ovale loading=lazy style="width:59%" }
 
@@ -1481,7 +1485,7 @@ title: "Exercises · Optimization problems"
 
         The point of local maximum $\begin{pmatrix}0\\0\end{pmatrix}$ is not a point of (global) maximum, since $2 < \frac{106}{5}$.
 
-    3. The graph of the function is the surface over the domain $D$, which is the red rectangle drawn on the bottom plane; the points of the graph corresponding to the four points of maximum are blue and the point corresponding to the point of local maximum that is not global is violet, with a dashed segment that joins them to the bottom plane.
+    3. The graph of the function is the surface over the domain $D$, which is the red square drawn on the bottom plane; the points of the graph corresponding to the four points of maximum are blue and the point corresponding to the point of local maximum that is not global is violet, with a dashed segment that joins them to the bottom plane.
 
         ![Figure 23](../img/ex-05-optimization-problems/fig23.png){ .fig .ovale loading=lazy style="width:59%" }
 
@@ -1548,7 +1552,7 @@ title: "Exercises · Optimization problems"
         = \left\{ \begin{pmatrix}-4\\-4\end{pmatrix},\begin{pmatrix}-4\\4\end{pmatrix},\begin{pmatrix}4\\-4\end{pmatrix},\begin{pmatrix}4\\4\end{pmatrix} \right\}.
         $$
 
-    3. The graph of the function is the surface over the domain $D$, which is the red rectangle drawn on the bottom plane; the points of the graph corresponding to the four points of maximum are blue and the point corresponding to the point of local maximum that is not global is violet, with a dashed segment that joins them to the bottom plane.
+    3. The graph of the function is the surface over the domain $D$, which is the red square drawn on the bottom plane; the points of the graph corresponding to the four points of maximum are blue and the point corresponding to the point of local maximum that is not global is violet, with a dashed segment that joins them to the bottom plane.
 
         ![Figure 24](../img/ex-05-optimization-problems/fig24.png){ .fig .ovale loading=lazy style="width:59%" }
 
@@ -1613,7 +1617,7 @@ title: "Exercises · Optimization problems"
 
         with equality only for $x_1 = 3$ and $x_2 = 0$. The point $\begin{pmatrix}3\\0\end{pmatrix}$ is the unique point of maximum of $f$ in $D$ and the maximum is $18$.
 
-    3. The graph of the function is the surface over the domain $D$, which is the red rectangle drawn on the bottom plane; the points of the graph corresponding to the point of maximum are blue and the point corresponding to the point of local maximum that is not global is violet, with a dashed segment that joins them to the bottom plane.
+    3. The graph of the function is the surface over the domain $D$, which is the red square drawn on the bottom plane; the point of the graph corresponding to the point of maximum is blue and the point corresponding to the point of local maximum that is not global is violet, with a dashed segment that joins them to the bottom plane.
 
         ![Figure 25](../img/ex-05-optimization-problems/fig25.png){ .fig .ovale loading=lazy style="width:59%" }
 
@@ -1689,6 +1693,6 @@ title: "Exercises · Optimization problems"
         = \left\{ \begin{pmatrix}3\\-3\end{pmatrix},\begin{pmatrix}3\\3\end{pmatrix} \right\}.
         $$
 
-    3. The graph of the function is the surface over the domain $D$, which is the red rectangle drawn on the bottom plane; the points of the graph corresponding to the two points of maximum are blue and the point corresponding to the point of local maximum that is not global is violet, with a dashed segment that joins them to the bottom plane.
+    3. The graph of the function is the surface over the domain $D$, which is the red square drawn on the bottom plane; the points of the graph corresponding to the two points of maximum are blue and the point corresponding to the point of local maximum that is not global is violet, with a dashed segment that joins them to the bottom plane.
 
         ![Figure 26](../img/ex-05-optimization-problems/fig26.png){ .fig .ovale loading=lazy style="width:59%" }

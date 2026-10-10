@@ -10,6 +10,8 @@ title: "Exercises · Convex and concave optimization problems"
 
 </div>
 
+## Problems in one variable
+
 In the exercises of this chapter, convexity and concavity of the objective functions are proved only with the definitions of the chapter «Convex and concave functions», using the inequality
 
 $$
@@ -106,89 +108,7 @@ of the same chapter. The feasible regions are described by constraints $g_i({\bo
 
 <a id="esercizio-6-2"></a>
 
-!!! esercizio "Exercise 6.2: Convex and concave optimization problems (E2)"
-
-    Consider the following optimization problem:
-
-    $$
-    \min \bigg\{\, (x_1-2)^2 + (x_2-2)^2 \ \text{ subject to } \ x_1 + x_2 \le 2,~ x_1 \ge 0,~ x_2 \ge 0 \,\bigg\}
-    $$
-
-    with objective function $f:\R^2 \to \R,~ f: {\boldsymbol x} \mapsto (x_1-2)^2 + (x_2-2)^2$ and feasible region $F$.
-
-    **Questions**
-
-    1. Prove that the feasible region is a convex set.
-
-    2. Prove that the objective function is convex in its domain, and deduce that the problem is a convex minimization problem.
-
-    3. Describe the level sets of the objective function for $k=2$ and $k=8$, and draw them together with the feasible region.
-
-    4. Prove that ${\boldsymbol x} = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$ is the unique optimal solution and compute the optimal value.
-
-    5. Does the problem have a point of local minimum different from $\begin{pmatrix} 1 \\ 1 \end{pmatrix}$?
-
-??? soluzione "Solution"
-
-    1. The feasible region is the set of the points that satisfy the three constraints
-
-        $$
-        g_1({\boldsymbol x}) = x_1 + x_2 - 2 \le 0, \qquad g_2({\boldsymbol x}) = -x_1 \le 0, \qquad g_3({\boldsymbol x}) = -x_2 \le 0 .
-        $$
-
-        Each function $g_i$ is linear, and it is convex, since the definition holds with equality: for every pair of points ${\boldsymbol p}, {\boldsymbol w} \in \R^2$ and every $\lambda \in [0,1]$, we have
-
-        $$
-        g_1\big(\lambda {\boldsymbol p}+(1-\lambda){\boldsymbol w}\big) = \lambda\,(p_1+p_2-2) + (1-\lambda)\,(w_1+w_2-2) = \lambda\, g_1({\boldsymbol p}) + (1-\lambda)\, g_1({\boldsymbol w}),
-        $$
-
-        and in the same way for $g_2$ and $g_3$. The feasible region is defined by constraints with convex functions, so it is a convex set: it is the triangle with vertices $\begin{pmatrix} 0 \\ 0 \end{pmatrix}$, $\begin{pmatrix} 2 \\ 0 \end{pmatrix}$ and $\begin{pmatrix} 0 \\ 2 \end{pmatrix}$, intersection of three half-planes.
-
-    2. To prove that the objective function is convex in its domain, we observe that for every pair of points ${\boldsymbol p}, {\boldsymbol w} \in \R^2$ and every $\lambda \in [0,1]$, we have:
-
-        \begin{align*}
-        f\big(\lambda {\boldsymbol p}+(1-\lambda){\boldsymbol w}\big)
-        &= \big(\lambda (p_1-2)+(1-\lambda)(w_1-2)\big)^2 \\
-        &\qquad + \big(\lambda (p_2-2)+(1-\lambda)(w_2-2)\big)^2 \\[1ex]
-        &\qquad (\text{since } \lambda + (1-\lambda) = 1) \\[2ex]
-        &\le \lambda (p_1-2)^2+(1-\lambda)(w_1-2)^2 + \lambda (p_2-2)^2+(1-\lambda)(w_2-2)^2 \\[1ex]
-        &\qquad \text{(since } \big(\lambda a+(1-\lambda)b\big)^2\le \lambda a^2+(1-\lambda)b^2\text{,} \\
-        &\qquad \phantom{\text{(}}\text{twice)} \\[2ex]
-        &= \lambda \big((p_1-2)^2+(p_2-2)^2\big)+(1-\lambda)\big((w_1-2)^2+(w_2-2)^2\big) \\[2ex]
-        &= \lambda f({\boldsymbol p})+(1-\lambda)f({\boldsymbol w})
-        \end{align*}
-
-        Therefore,
-
-        $$
-        f\big(\lambda {\boldsymbol p} + (1-\lambda) {\boldsymbol w}\big) \le \lambda f({\boldsymbol p}) + (1-\lambda) f({\boldsymbol w})
-        $$
-
-        By nature, the domain $\R^2$ is a convex set. Accordingly, the function is convex in its domain, and in particular over the convex feasible region $F$: the problem is a convex minimization problem.
-
-    3. The level set for $k$ is the set of the points with $(x_1-2)^2 + (x_2-2)^2 = k$, that is, the circle centered at $\begin{pmatrix} 2 \\ 2 \end{pmatrix}$ with radius $\sqrt{k}$. For $k=2$, the radius is $\sqrt{2}$ and the circle passes through $\begin{pmatrix} 1 \\ 1 \end{pmatrix}$, since $1+1=2$; for $k=8$, the radius is $2\sqrt{2}$ and the circle passes through $\begin{pmatrix} 0 \\ 0 \end{pmatrix}$, since $4+4=8$. In the figure, the feasible region is red, the level set $k=2$ is blue, the level set $k=8$ is orange and the optimal solution of the next question is blue: the circle $k=2$ touches the feasible region only at this point.
-
-        ![Figure 2](../img/ex-06-convex-concave-problems/fig02.svg){ .fig .ovale loading=lazy style="width:50%" }
-
-    4. For every feasible point ${\boldsymbol x}$, let $a = x_1 - 2$ and $b = x_2 - 2$. Since $x_1 + x_2 \le 2$, we have $a + b = x_1 + x_2 - 4 \le -2$, and then $(a+b)^2 \ge 4$. Moreover, $2\,(a^2+b^2) - (a+b)^2 = (a-b)^2 \ge 0$. Therefore:
-
-        $$
-        f({\boldsymbol x}) = a^2 + b^2 \ge \frac{(a+b)^2}{2} \ge \frac{4}{2} = 2 = f\left(\begin{pmatrix} 1 \\ 1 \end{pmatrix}\right), \qquad \forall {\boldsymbol x} \in F,
-        $$
-
-        and the point $\begin{pmatrix} 1 \\ 1 \end{pmatrix}$ is feasible, since $1+1 = 2$. Equality holds only if $a = b$ and $a + b = -2$, that is, $a=b=-1$ and ${\boldsymbol x} = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$. The unique optimal solution and the optimal value are:
-
-        $$
-        \tilde{\boldsymbol x}(P) = \begin{pmatrix} 1 \\ 1 \end{pmatrix}
-        \qquad \text{and} \qquad
-        z(P) = 2.
-        $$
-
-    5. No. The problem is a convex minimization problem: by the proposition «local minima of convex minimization problems» of the chapter «Convex and concave optimization problems», every point of local minimum is a point of minimum, that is, an optimal solution, and the optimal solution is unique.
-
-<a id="esercizio-6-3"></a>
-
-!!! esercizio "Exercise 6.3: Convex and concave optimization problems (E3)"
+!!! esercizio "Exercise 6.2: Convex and concave optimization problems (E3)"
 
     Consider the following objective function and feasible region:
 
@@ -251,7 +171,7 @@ of the same chapter. The feasible regions are described by constraints $g_i({\bo
 
     2. We have $f(-1) = -1$, $f(1) = 3$, $f(3) = -1$ and $f(4) = -6$. The graph of the objective function over the feasible region is red and the feasible region is the red part of the $x$-axis; the optimal solutions of the two problems are blue and the point of local minimum that is not a point of minimum is violet.
 
-        ![Figure 3](../img/ex-06-convex-concave-problems/fig03.svg){ .fig .ovale loading=lazy style="width:50%" }
+        ![Figure 2](../img/ex-06-convex-concave-problems/fig02.svg){ .fig .ovale loading=lazy style="width:50%" }
 
     3. In the neighborhood $N\big((-1),1\big) = (-2,0)$, the feasible points are those of $N\big((-1),1\big) \cap F = [-1,0)$. For every such point we have $-2 \le x-1 < -1$, then $(x-1)^2 \le 4$ and
 
@@ -269,7 +189,7 @@ of the same chapter. The feasible regions are described by constraints $g_i({\bo
         z(P) = -6.
         $$
 
-    4. The proposition «local minima of convex minimization problems» of the chapter «Convex and concave optimization problems» requires an objective function convex over the feasible region. By the first question, the objective function is not convex over $F$: the minimization problem is not a convex minimization problem, and one of its points of local minimum is not a point of minimum. A method that only explores the points close to $x=-1$ stops at the local minimum $-1$, while the optimal value is $-6$.
+    4. The proposition «local minima of convex minimization problems» of the chapter «Convex and concave optimization problems» requires an objective function convex over the feasible region. By the first question, the objective function is not convex over $F$: the minimization problem is not a convex minimization problem, and one of its points of local minimum is not a point of minimum. A method that only explores the points close to $x=-1$ stops at the point of local minimum $x=-1$, with local minimum $f(-1) = -1$, while the optimal value is $-6$.
 
     5. In the neighborhood $N\big((1),1\big) = (0,2)$, all points are feasible and
 
@@ -284,6 +204,90 @@ of the same chapter. The feasible regions are described by constraints $g_i({\bo
         \qquad \text{and} \qquad
         z(P) = 3.
         $$
+
+## Problems in two variables
+
+<a id="esercizio-6-3"></a>
+
+!!! esercizio "Exercise 6.3: Convex and concave optimization problems (E2)"
+
+    Consider the following optimization problem:
+
+    $$
+    \min \bigg\{\, (x_1-2)^2 + (x_2-2)^2 \ \text{ subject to } \ x_1 + x_2 \le 2,~ x_1 \ge 0,~ x_2 \ge 0 \,\bigg\}
+    $$
+
+    with objective function $f:\R^2 \to \R,~ f: {\boldsymbol x} \mapsto (x_1-2)^2 + (x_2-2)^2$ and feasible region $F$.
+
+    **Questions**
+
+    1. Prove that the feasible region is a convex set.
+
+    2. Prove that the objective function is convex in its domain, and deduce that the problem is a convex minimization problem.
+
+    3. Describe the level sets of the objective function for $k=2$ and $k=8$, and draw them together with the feasible region.
+
+    4. Prove that ${\boldsymbol x} = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$ is the unique optimal solution and compute the optimal value.
+
+    5. Does the problem have a point of local minimum different from $\begin{pmatrix} 1 \\ 1 \end{pmatrix}$?
+
+??? soluzione "Solution"
+
+    1. The feasible region is the set of the points that satisfy the three constraints
+
+        $$
+        g_1({\boldsymbol x}) = x_1 + x_2 - 2 \le 0, \qquad g_2({\boldsymbol x}) = -x_1 \le 0, \qquad g_3({\boldsymbol x}) = -x_2 \le 0 .
+        $$
+
+        Each function $g_i$ is linear, and it is convex, since the definition holds with equality: for every pair of points ${\boldsymbol p}, {\boldsymbol w} \in \R^2$ and every $\lambda \in [0,1]$, we have
+
+        $$
+        g_1\big(\lambda {\boldsymbol p}+(1-\lambda){\boldsymbol w}\big) = \lambda\,(p_1+p_2-2) + (1-\lambda)\,(w_1+w_2-2) = \lambda\, g_1({\boldsymbol p}) + (1-\lambda)\, g_1({\boldsymbol w}),
+        $$
+
+        and in the same way for $g_2$ and $g_3$. The feasible region is defined by constraints with convex functions, so it is a convex set: it is the triangle with vertices $\begin{pmatrix} 0 \\ 0 \end{pmatrix}$, $\begin{pmatrix} 2 \\ 0 \end{pmatrix}$ and $\begin{pmatrix} 0 \\ 2 \end{pmatrix}$, intersection of three half-planes.
+
+    2. To prove that the objective function is convex in its domain, we observe that for every pair of points ${\boldsymbol p}, {\boldsymbol w} \in \R^2$ and every $\lambda \in [0,1]$, we have:
+
+        \begin{align*}
+        f\big(\lambda {\boldsymbol p}+(1-\lambda){\boldsymbol w}\big)
+        &= \big(\lambda (p_1-2)+(1-\lambda)(w_1-2)\big)^2 \\
+        &\qquad + \big(\lambda (p_2-2)+(1-\lambda)(w_2-2)\big)^2 \\[1ex]
+        &\qquad (\text{since } \lambda + (1-\lambda) = 1) \\[2ex]
+        &\le \lambda (p_1-2)^2+(1-\lambda)(w_1-2)^2 + \lambda (p_2-2)^2+(1-\lambda)(w_2-2)^2 \\[1ex]
+        &\qquad \text{(since } \big(\lambda a+(1-\lambda)b\big)^2\le \lambda a^2+(1-\lambda)b^2\text{,} \\
+        &\qquad \phantom{\text{(}}\text{twice)} \\[2ex]
+        &= \lambda \big((p_1-2)^2+(p_2-2)^2\big)+(1-\lambda)\big((w_1-2)^2+(w_2-2)^2\big) \\[2ex]
+        &= \lambda f({\boldsymbol p})+(1-\lambda)f({\boldsymbol w})
+        \end{align*}
+
+        Therefore,
+
+        $$
+        f\big(\lambda {\boldsymbol p} + (1-\lambda) {\boldsymbol w}\big) \le \lambda f({\boldsymbol p}) + (1-\lambda) f({\boldsymbol w})
+        $$
+
+        By nature, the domain $\R^2$ is a convex set. Accordingly, the function is convex in its domain, and in particular over the convex feasible region $F$: the problem is a convex minimization problem.
+
+    3. The level set for $k$ is the set of the points with $(x_1-2)^2 + (x_2-2)^2 = k$, that is, the circle centered at $\begin{pmatrix} 2 \\ 2 \end{pmatrix}$ with radius $\sqrt{k}$. For $k=2$, the radius is $\sqrt{2}$ and the circle passes through $\begin{pmatrix} 1 \\ 1 \end{pmatrix}$, since $1+1=2$; for $k=8$, the radius is $2\sqrt{2}$ and the circle passes through $\begin{pmatrix} 0 \\ 0 \end{pmatrix}$, since $4+4=8$. In the figure, the feasible region is red, the level set $k=2$ is blue, the level set $k=8$ is orange and the optimal solution of the next question is blue: the circle $k=2$ touches the feasible region only at this point.
+
+        ![Figure 3](../img/ex-06-convex-concave-problems/fig03.svg){ .fig .ovale loading=lazy style="width:50%" }
+
+    4. For every feasible point ${\boldsymbol x}$, let $a = x_1 - 2$ and $b = x_2 - 2$. Since $x_1 + x_2 \le 2$, we have $a + b = x_1 + x_2 - 4 \le -2$, and then $(a+b)^2 \ge 4$. Moreover, $2\,(a^2+b^2) - (a+b)^2 = (a-b)^2 \ge 0$. Therefore:
+
+        $$
+        f({\boldsymbol x}) = a^2 + b^2 \ge \frac{(a+b)^2}{2} \ge \frac{4}{2} = 2 = f\left(\begin{pmatrix} 1 \\ 1 \end{pmatrix}\right), \qquad \forall {\boldsymbol x} \in F,
+        $$
+
+        and the point $\begin{pmatrix} 1 \\ 1 \end{pmatrix}$ is feasible, since $1+1 = 2$. Equality holds only if $a = b$ and $a + b = -2$, that is, $a=b=-1$ and ${\boldsymbol x} = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$. The unique optimal solution and the optimal value are:
+
+        $$
+        \tilde{\boldsymbol x}(P) = \begin{pmatrix} 1 \\ 1 \end{pmatrix}
+        \qquad \text{and} \qquad
+        z(P) = 2.
+        $$
+
+    5. No. The problem is a convex minimization problem: by the proposition «local minima of convex minimization problems» of the chapter «Convex and concave optimization problems», every point of local minimum is a point of minimum, that is, an optimal solution, and the optimal solution is unique.
 
 <a id="esercizio-6-4"></a>
 

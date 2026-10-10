@@ -183,7 +183,7 @@ title: "Quadratic functions"
     \left\{~~{\boldsymbol x} \in \R^{n}:~~ {\boldsymbol x}' \; {\boldsymbol Q} \; {\boldsymbol x}= k  ~~\right\} , \qquad \forall k \in \mathbb{R}
     \end{align*}
 
-- Depending on the matrix $\boldsymbol Q$, the nonempty level sets can be <strong>ellipsoids</strong> (ellipses in $\R^2$), <strong>hyperboloids</strong> (hyperbolas in $\R^2$) or, when some directions do not change the value of the function, <strong>cylinders</strong> (pairs of parallel lines in $\R^2$). The graph of the quadratic functions of the following examples is a <strong>paraboloid</strong>.
+- Depending on the matrix $\boldsymbol Q$, the nonempty level sets can be <strong>ellipsoids</strong> (ellipses in $\R^2$), <strong>hyperboloids</strong> (hyperbolas in $\R^2$) or, when some directions do not change the value of the function, <strong>cylinders</strong> (pairs of parallel lines in $\R^2$). For $k=0$ there are also degenerate cases: the single point ${\boldsymbol 0}$ in place of an ellipsoid, two lines crossing at the origin in $\R^2$ (a cone in $\R^n$) in place of a hyperboloid, and a single line through the origin in $\R^2$ (a linear subspace in $\R^n$) in place of a cylinder. The graph of the quadratic functions of the following examples is a <strong>paraboloid</strong>.
 
 !!! chiave ""
 
@@ -381,41 +381,20 @@ title: "Quadratic functions"
 
 ??? dimostrazione "Proof"
 
-    If the matrix ${\boldsymbol Q}$ is positive semidefinite, for every pair of column vectors ${\boldsymbol p}, {\boldsymbol w} \in \mathbb{R}^{n}$ we have:
+    If the matrix ${\boldsymbol Q}$ is positive semidefinite, for every pair of points ${\boldsymbol p}, {\boldsymbol w} \in \R^n$ and every $\lambda \in [0,1]$, we have:
 
     \begin{align*}
-    0 &\le ({\boldsymbol p}-{\boldsymbol w})' {\boldsymbol Q} \;  ({\boldsymbol p}-{\boldsymbol w}) \\[2ex]
-    &= {\boldsymbol p}' {\boldsymbol Q} \; {\boldsymbol p} +  {\boldsymbol w}' {\boldsymbol Q} \; {\boldsymbol w} -  {\boldsymbol p}' {\boldsymbol Q} \; {\boldsymbol w} -  {\boldsymbol w}' {\boldsymbol Q} \; {\boldsymbol p}
-    \end{align*}
-
-    Moreover, for every scalar $\lambda \in [0,1]$, multiplying by $\lambda\;(1-\lambda) \ge 0$, we get:
-
-    \begin{align*}
-    & \lambda\;(1-\lambda) \; {\boldsymbol p}' {\boldsymbol Q} \; {\boldsymbol p}
-    + \lambda\;(1-\lambda)\; {\boldsymbol w}' {\boldsymbol Q} \; {\boldsymbol w} \\[1ex]
-    & \qquad - \lambda\;(1-\lambda) \; {\boldsymbol p}' {\boldsymbol Q} \; {\boldsymbol w}
-    - \lambda\;(1-\lambda)\; {\boldsymbol w}' {\boldsymbol Q} \; {\boldsymbol p}
-    ~\ge~ 0
-    \end{align*}
-
-    where the first two terms are:
-
-    \begin{align*}
-    \lambda\;(1-\lambda) \; {\boldsymbol p}' {\boldsymbol Q} \; {\boldsymbol p}
-    &= \lambda \; {\boldsymbol p}' {\boldsymbol Q} \; {\boldsymbol p} - \lambda^2 \; {\boldsymbol p}' {\boldsymbol Q} \; {\boldsymbol p} \\[2ex]
-    \lambda\;(1-\lambda)\; {\boldsymbol w}' {\boldsymbol Q} \; {\boldsymbol w}
-    &= (1-\lambda)\big(1-(1-\lambda)\big)\;{\boldsymbol w}' {\boldsymbol Q} \; {\boldsymbol w} \\[1ex]
-    &= (1-\lambda)\;{\boldsymbol w}' {\boldsymbol Q} \; {\boldsymbol w} - (1-\lambda)^2\; {\boldsymbol w}' {\boldsymbol Q} \; {\boldsymbol w}
-    \end{align*}
-
-    and, rearranging the terms, we have:
-
-    \begin{align*}
-    & \underbrace{\lambda^2 \; {\boldsymbol p}' {\boldsymbol Q} \; {\boldsymbol p} + (1-\lambda)^2\; {\boldsymbol w}' {\boldsymbol Q} \; {\boldsymbol w} + \lambda\;(1-\lambda)\; {\boldsymbol p}' {\boldsymbol Q} \; {\boldsymbol w} + \lambda\;(1-\lambda) \;{\boldsymbol w}' {\boldsymbol Q} \; {\boldsymbol p}}_{
-    =(\lambda \;{\boldsymbol p} + (1-\lambda)\; {\boldsymbol w} )' ~{\boldsymbol Q} \; (\lambda \;{\boldsymbol p} + (1-\lambda)\; {\boldsymbol w} )
-    } \\[1ex]
-    & \qquad \le
-    \lambda \; {\boldsymbol p}' {\boldsymbol Q} \; {\boldsymbol p} + (1-\lambda)\;{\boldsymbol w}' {\boldsymbol Q} \; {\boldsymbol w}
+    & f\big(\lambda \; {\boldsymbol p} + (1-\lambda)\;{\boldsymbol w}\big) \\[2ex]
+    &\quad = (\lambda \;{\boldsymbol p} + (1-\lambda)\; {\boldsymbol w} )' ~{\boldsymbol Q} \; (\lambda \;{\boldsymbol p} + (1-\lambda)\; {\boldsymbol w} ) \\[2ex]
+    &\quad = \lambda^2 \; {\boldsymbol p}' {\boldsymbol Q} \; {\boldsymbol p} + (1-\lambda)^2\; {\boldsymbol w}' {\boldsymbol Q} \; {\boldsymbol w} \\[1ex]
+    &\qquad + \lambda\;(1-\lambda)\; {\boldsymbol p}' {\boldsymbol Q} \; {\boldsymbol w} + \lambda\;(1-\lambda) \;{\boldsymbol w}' {\boldsymbol Q} \; {\boldsymbol p} \\[2ex]
+    &\quad = \lambda \; {\boldsymbol p}' {\boldsymbol Q} \; {\boldsymbol p} + (1-\lambda)\;{\boldsymbol w}' {\boldsymbol Q} \; {\boldsymbol w} \\[1ex]
+    &\qquad - \lambda\;(1-\lambda) \; \big( {\boldsymbol p}' {\boldsymbol Q} \; {\boldsymbol p} + {\boldsymbol w}' {\boldsymbol Q} \; {\boldsymbol w} - {\boldsymbol p}' {\boldsymbol Q} \; {\boldsymbol w} - {\boldsymbol w}' {\boldsymbol Q} \; {\boldsymbol p} \big) \\[1ex]
+    &\qquad \text{(since $\lambda^2 = \lambda - \lambda\;(1-\lambda)$ and $(1-\lambda)^2 = (1-\lambda) - \lambda\;(1-\lambda)$)} \\[2ex]
+    &\quad = \lambda \; {\boldsymbol p}' {\boldsymbol Q} \; {\boldsymbol p} + (1-\lambda)\;{\boldsymbol w}' {\boldsymbol Q} \; {\boldsymbol w} - \lambda\;(1-\lambda) \; ({\boldsymbol p}-{\boldsymbol w})' {\boldsymbol Q} \;  ({\boldsymbol p}-{\boldsymbol w}) \\[2ex]
+    &\quad \le \lambda \; {\boldsymbol p}' {\boldsymbol Q} \; {\boldsymbol p} + (1-\lambda)\;{\boldsymbol w}' {\boldsymbol Q} \; {\boldsymbol w} \\[1ex]
+    &\qquad \text{(since ${\boldsymbol Q}$ is positive semidefinite and $\lambda\;(1-\lambda) \ge 0$)} \\[2ex]
+    &\quad = \lambda \; f({\boldsymbol p}) + (1-\lambda)\; f({\boldsymbol w})
     \end{align*}
 
     Therefore,
@@ -584,13 +563,17 @@ title: "Quadratic functions"
     \nabla g({\boldsymbol x}) = 2\,{\boldsymbol Q}\,{\boldsymbol x} + {\boldsymbol c}, \qquad \nabla^2 g({\boldsymbol x}) = 2\,{\boldsymbol Q}
     $$
 
-- The function $h({\boldsymbol x}) = {\boldsymbol c}' {\boldsymbol x} + d$ is convex (and concave) in its domain, since the definition holds with equality: for every pair of points ${\boldsymbol p}, {\boldsymbol w} \in \R^n$ and every $\lambda \in [0,1]$, we have
+- The function $h({\boldsymbol x}) = {\boldsymbol c}' {\boldsymbol x} + d$ is convex (and concave) in its domain, since the definition holds with equality: for every pair of points ${\boldsymbol p}, {\boldsymbol w} \in \R^n$ and every $\lambda \in [0,1]$, we have:
 
-    $$
-    h\big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big) = \lambda\, {\boldsymbol c}'{\boldsymbol p} + (1-\lambda)\, {\boldsymbol c}'{\boldsymbol w} + \lambda d + (1-\lambda) d = \lambda h({\boldsymbol p}) + (1-\lambda) h({\boldsymbol w})
-    $$
+    \begin{align*}
+    & h\big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big) \\[2ex]
+    &\quad = {\boldsymbol c}'\big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big) + d \\[2ex]
+    &\quad = \lambda\, {\boldsymbol c}'{\boldsymbol p} + (1-\lambda)\, {\boldsymbol c}'{\boldsymbol w} + \lambda d + (1-\lambda) d \\[1ex]
+    &\qquad \text{(since $\lambda + (1-\lambda) = 1$)} \\[2ex]
+    &\quad = \lambda h({\boldsymbol p}) + (1-\lambda) h({\boldsymbol w})
+    \end{align*}
 
-    Since the sum of convex functions is convex (chapter «Convex and concave functions»), if the matrix ${\boldsymbol Q}$ is positive semidefinite, the function $g$ is convex in its domain. Conversely, if $g$ is convex, the quadratic function ${\boldsymbol x}' {\boldsymbol Q} \; {\boldsymbol x} = g({\boldsymbol x}) + \big(-{\boldsymbol c}' {\boldsymbol x} - d\big)$ is convex, as the sum of two convex functions, and the matrix ${\boldsymbol Q}$ is positive semidefinite by the corollary.
+    Therefore, both inequalities of the definitions of convex and concave function hold with equality. By nature, the domain $\R^n$ is a convex set. Accordingly, the function $h$ is convex and concave in its domain. Since the sum of convex functions is convex (chapter «Convex and concave functions»), if the matrix ${\boldsymbol Q}$ is positive semidefinite, the function $g$ is convex in its domain. Conversely, if $g$ is convex, the quadratic function ${\boldsymbol x}' {\boldsymbol Q} \; {\boldsymbol x} = g({\boldsymbol x}) + \big(-{\boldsymbol c}' {\boldsymbol x} - d\big)$ is convex, as the sum of two convex functions, and the matrix ${\boldsymbol Q}$ is positive semidefinite by the corollary.
 
 !!! chiave ""
 

@@ -12,7 +12,7 @@ title: "Convex sets"
 
 ## 1.1 Convex combination
 
-<a id="box-1-defXX"></a>
+<a id="box-1-def-convexcombination"></a>
 
 !!! definizione "Definition 1.1: convex combination"
 
@@ -55,7 +55,7 @@ title: "Convex sets"
 
     ![Figure 1](../img/01-convex-sets/fig01.svg){ .fig .ovale loading=lazy style="width:82%" }
 
-<a id="box-2-texexpbox1"></a>
+<a id="box-2-exConvexCombination"></a>
 
 !!! esempio "Example 1.1: convex combination"
 
@@ -71,7 +71,7 @@ title: "Convex sets"
 
     ![Figure 2](../img/01-convex-sets/fig02.svg){ .fig .ovale loading=lazy style="width:71%" }
 
-<a id="box-3-defXX"></a>
+<a id="box-3-def-convexcombinationm"></a>
 
 !!! definizione "Definition 1.2: convex combination of $m$ points"
 
@@ -131,7 +131,7 @@ title: "Convex sets"
 
     ![Figure 3](../img/01-convex-sets/fig03.svg){ .fig .ovale loading=lazy style="width:82%" }
 
-<a id="box-4-texexpbox1"></a>
+<a id="box-4-exConvexCombinationThree"></a>
 
 !!! esempio "Example 1.2: convex combination of $3$ points"
 
@@ -149,7 +149,7 @@ title: "Convex sets"
 
 ## 1.2 Convex sets
 
-<a id="box-5-defXX"></a>
+<a id="box-5-def-convexset"></a>
 
 !!! definizione "Definition 1.3: convex set"
 
@@ -185,7 +185,7 @@ title: "Convex sets"
 
 ## 1.3 Examples of convex sets
 
-<a id="box-6-propXX"></a>
+<a id="box-6-obs-ballone"></a>
 
 !!! teorema "Observation 1.4"
 
@@ -207,7 +207,7 @@ title: "Convex sets"
 
 ??? dimostrazione "Proof"
 
-    For every pair of points ${\boldsymbol p}$ and ${\boldsymbol w}$ in the set and for every $\lambda \in [0,1]$, we have:
+    For every pair of points ${\boldsymbol p}, {\boldsymbol w}$ in the set and every $\lambda \in [0,1]$, we have:
 
     \begin{align*}
     \| \lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w} - {\boldsymbol c} \|_1
@@ -223,9 +223,9 @@ title: "Convex sets"
     & = r
     \end{align*}
 
-    Then $\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}$ belongs to the set and, therefore, the set is convex. <span class="qed">□</span>
+    Therefore, $\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}$ belongs to the set, and the set is convex. <span class="qed">□</span>
 
-<a id="box-7-texexpbox1"></a>
+<a id="box-7-exDiamond"></a>
 
 !!! esempio "Example 1.3: diamond in $\R^2$"
 
@@ -246,7 +246,7 @@ title: "Convex sets"
 
     ![Figure 9](../img/01-convex-sets/fig09.svg){ .fig .ovale loading=lazy style="width:59%" }
 
-<a id="box-8-propXX"></a>
+<a id="box-8-obs-balltwo"></a>
 
 !!! teorema "Observation 1.5"
 
@@ -268,7 +268,7 @@ title: "Convex sets"
 
 ??? dimostrazione "Proof"
 
-    For every pair of points ${\boldsymbol p}$ and ${\boldsymbol w}$ in the set and for every $\lambda \in [0,1]$, we have:
+    For every pair of points ${\boldsymbol p}, {\boldsymbol w}$ in the set and every $\lambda \in [0,1]$, we have:
 
     \begin{align*}
     \| \lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w} - {\boldsymbol c} \|_2
@@ -284,9 +284,9 @@ title: "Convex sets"
     & = r
     \end{align*}
 
-    Then $\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}$ belongs to the set and, therefore, the set is convex. <span class="qed">□</span>
+    Therefore, $\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}$ belongs to the set, and the set is convex. <span class="qed">□</span>
 
-<a id="box-9-texexpbox1"></a>
+<a id="box-9-exDisk"></a>
 
 !!! esempio "Example 1.4: closed ball in $\R^2$"
 
@@ -303,11 +303,11 @@ title: "Convex sets"
     ~\right\}
     $$
 
-    The points of this set are all those lying inside (and on) the circle of radius $3$ centered at  $\begin{pmatrix} 3 \\[0.3ex] 3 \end{pmatrix}$, shown as the red shaded region in the figure below.
+    The points of this set are all those lying inside (and on the boundary of) the disk of radius $3$ centered at  $\begin{pmatrix} 3 \\[0.3ex] 3 \end{pmatrix}$, shown as the red shaded region in the figure below.
 
     ![Figure 10](../img/01-convex-sets/fig10.svg){ .fig .ovale loading=lazy style="width:59%" }
 
-<a id="box-10-propXX"></a>
+<a id="box-10-obs-ballinf"></a>
 
 !!! teorema "Observation 1.6"
 
@@ -330,7 +330,7 @@ title: "Convex sets"
 
 ??? dimostrazione "Proof"
 
-    For every pair of points ${\boldsymbol p}$ and ${\boldsymbol w}$ in the set and for every $\lambda \in [0,1]$, we have:
+    For every pair of points ${\boldsymbol p}, {\boldsymbol w}$ in the set and every $\lambda \in [0,1]$, we have:
 
     \begin{align*}
     \| \lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w} - {\boldsymbol c} \|_\infty
@@ -346,9 +346,9 @@ title: "Convex sets"
     & = r
     \end{align*}
 
-    Then $\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}$ belongs to the set and, therefore, the set is convex. <span class="qed">□</span>
+    Therefore, $\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}$ belongs to the set, and the set is convex. <span class="qed">□</span>
 
-<a id="box-11-texexpbox1"></a>
+<a id="box-11-exSquareBox"></a>
 
 !!! esempio "Example 1.5: square in $\R^2$"
 
@@ -371,7 +371,7 @@ title: "Convex sets"
 
 ## 1.4 Properties of convex sets
 
-<a id="box-12-propXX"></a>
+<a id="box-12-obs-intersection"></a>
 
 !!! teorema "Observation 1.7"
 
@@ -389,7 +389,7 @@ title: "Convex sets"
 
 ??? dimostrazione "Proof"
 
-    For every pair of points ${\boldsymbol p}$ and ${\boldsymbol w}$ in the set and for every $\lambda \in [0,1]$, we have:
+    For every pair of points ${\boldsymbol p}, {\boldsymbol w} \in \bigcap_{i=1}^m A_i$ and every $\lambda \in [0,1]$, we have:
 
     \begin{align*}
     {\boldsymbol p},\,{\boldsymbol w} \in \bigcap_{i=1}^m A_i
@@ -401,7 +401,7 @@ title: "Convex sets"
     &\phantom{\Longrightarrow}~~ \text{(by definition of intersection)}
     \end{align*}
 
-    Then $\lambda\,{\boldsymbol p}+(1-\lambda)\,{\boldsymbol w}$ belongs to the set and, therefore, the set is convex. <span class="qed">□</span>
+    Therefore, $\lambda\,{\boldsymbol p}+(1-\lambda)\,{\boldsymbol w} \in \bigcap_{i=1}^m A_i$, and the set is convex. <span class="qed">□</span>
 
 - In $\R^2$ (the 2-dimensional space),  examples of intersection of three convex sets $A_1,A_2$ and $A_3$ are given by the following pictures, first with three ellipses:
 

@@ -214,9 +214,9 @@ title: "Exercises · Convex sets"
     and the following two points in $F$ and scalar:
 
     $$
-    {\boldsymbol p}=\begin{pmatrix} 0 \\[0.3ex] 4 \end{pmatrix},
+    {\boldsymbol q}^{(1)}=\begin{pmatrix} 0 \\[0.3ex] 4 \end{pmatrix},
     \qquad
-    {\boldsymbol w}=\begin{pmatrix} 3 \\[0.3ex] 0 \end{pmatrix}
+    {\boldsymbol q}^{(2)}=\begin{pmatrix} 3 \\[0.3ex] 0 \end{pmatrix}
     \qquad \text{and} \qquad
     \lambda = \frac{1}{3}.
     $$
@@ -227,34 +227,27 @@ title: "Exercises · Convex sets"
 
     2. Find the vertices of $F$ and draw the set.
 
-    3. Compute the convex combination of ${\boldsymbol p}$ and ${\boldsymbol w}$ with the scalar $\lambda$ and verify that it belongs to $F$.
+    3. Compute the convex combination of ${\boldsymbol q}^{(1)}$ and ${\boldsymbol q}^{(2)}$ with the scalar $\lambda$ and verify that it belongs to $F$.
 
 ??? soluzione "Solution"
 
-    1. For every pair of points ${\boldsymbol p}$ and ${\boldsymbol w}$ in the set and for every $\lambda \in [0,1]$, we have:
+    1. Each of the four inequalities that define $F$ has the form $a_1\,x_1 + a_2\,x_2 \le b$, with
+
+        $$
+        (a_1,a_2,b) \in \big\{\,(1,2,8),~(3,1,9),~(-1,0,0),~(0,-1,0)\,\big\}
+        $$
+
+        (the last two are $x_1 \ge 0$ and $x_2 \ge 0$). For every pair of points ${\boldsymbol p}, {\boldsymbol w} \in F$ and every $\lambda \in [0,1]$, for each of the four inequalities we have:
 
         \begin{align*}
-        & \big(\lambda p_1 + (1-\lambda) w_1\big) + 2\,\big(\lambda p_2 + (1-\lambda) w_2\big) \\[2ex]
-        &\quad = \lambda\,(p_1 + 2\,p_2) + (1-\lambda)\,(w_1 + 2\,w_2) \\[2ex]
-        &\quad \le \lambda \cdot 8 + (1-\lambda) \cdot 8
-        \quad (\text{since } {\boldsymbol p}, {\boldsymbol w} \in F,~ \lambda \ge 0 \text{ and } 1-\lambda \ge 0)\\[2ex]
-        &\quad = 8 \\[4ex]
-        & 3\,\big(\lambda p_1 + (1-\lambda) w_1\big) + \big(\lambda p_2 + (1-\lambda) w_2\big) \\[2ex]
-        &\quad = \lambda\,(3\,p_1 + p_2) + (1-\lambda)\,(3\,w_1 + w_2) \\[2ex]
-        &\quad \le \lambda \cdot 9 + (1-\lambda) \cdot 9
-        \quad (\text{since } {\boldsymbol p}, {\boldsymbol w} \in F,~ \lambda \ge 0 \text{ and } 1-\lambda \ge 0)\\[2ex]
-        &\quad = 9 \\[4ex]
-        & \lambda p_1 + (1-\lambda) w_1 \\[2ex]
-        &\quad \ge \lambda \cdot 0 + (1-\lambda) \cdot 0
-        \quad (\text{since } {\boldsymbol p}, {\boldsymbol w} \in F,~ \lambda \ge 0 \text{ and } 1-\lambda \ge 0)\\[2ex]
-        &\quad = 0 \\[4ex]
-        & \lambda p_2 + (1-\lambda) w_2 \\[2ex]
-        &\quad \ge \lambda \cdot 0 + (1-\lambda) \cdot 0
-        \quad (\text{since } {\boldsymbol p}, {\boldsymbol w} \in F,~ \lambda \ge 0 \text{ and } 1-\lambda \ge 0)\\[2ex]
-        &\quad = 0
+        & a_1\,\big(\lambda p_1 + (1-\lambda) w_1\big) + a_2\,\big(\lambda p_2 + (1-\lambda) w_2\big) \\[2ex]
+        &\quad = \lambda\,(a_1\,p_1 + a_2\,p_2) + (1-\lambda)\,(a_1\,w_1 + a_2\,w_2) \\[2ex]
+        &\quad \le \lambda\, b + (1-\lambda)\, b \\[1ex]
+        &\qquad\quad (\text{since } {\boldsymbol p}, {\boldsymbol w} \in F,~ \lambda \ge 0 \text{ and } 1-\lambda \ge 0)\\[2ex]
+        &\quad = b
         \end{align*}
 
-        Then $\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}$ belongs to the set and, therefore, the set is convex.
+        Therefore, $\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w} \in F$, and the set is convex.
 
         The same computation shows that each of the four sets defined by one inequality (a half-plane) is convex: $F$ is their intersection, which is convex since the intersection of convex sets is convex (chapter «Convex sets»).
 
@@ -279,11 +272,11 @@ title: "Exercises · Convex sets"
         \end{pmatrix}
         \end{equation*}
 
-        The set $F$ is the quadrilateral with vertices $\begin{pmatrix} 0 \\[0.3ex] 0 \end{pmatrix}$, $\begin{pmatrix} 3 \\[0.3ex] 0 \end{pmatrix}$, $\begin{pmatrix} 2 \\[0.3ex] 3 \end{pmatrix}$ and $\begin{pmatrix} 0 \\[0.3ex] 4 \end{pmatrix}$ (red). The figure also shows the segment joining ${\boldsymbol p}$ and ${\boldsymbol w}$ (blue) and the convex combination of the next question.
+        The set $F$ is the quadrilateral with vertices $\begin{pmatrix} 0 \\[0.3ex] 0 \end{pmatrix}$, $\begin{pmatrix} 3 \\[0.3ex] 0 \end{pmatrix}$, $\begin{pmatrix} 2 \\[0.3ex] 3 \end{pmatrix}$ and $\begin{pmatrix} 0 \\[0.3ex] 4 \end{pmatrix}$ (red). The figure also shows the segment joining ${\boldsymbol q}^{(1)}$ and ${\boldsymbol q}^{(2)}$ (blue) and the convex combination of the next question.
 
         ![Figure 3](../img/ex-01-convex-sets/fig03.svg){ .fig .ovale loading=lazy style="width:50%" }
 
-    3. The convex combination of ${\boldsymbol p}$ and ${\boldsymbol w}$ with $\lambda = \frac{1}{3}$ is the point:
+    3. The convex combination of ${\boldsymbol q}^{(1)}$ and ${\boldsymbol q}^{(2)}$ with $\lambda = \frac{1}{3}$ is the point:
 
         $$
         \frac{1}{3}\begin{pmatrix} 0 \\[0.3ex] 4 \end{pmatrix} + \frac{2}{3}\begin{pmatrix} 3 \\[0.3ex] 0 \end{pmatrix}
@@ -354,25 +347,26 @@ title: "Exercises · Convex sets"
 
         The vector ${\boldsymbol u}({\boldsymbol x})$ depends linearly on ${\boldsymbol x}$: for every ${\boldsymbol p}, {\boldsymbol w} \in \R^2$ and every $\lambda \in [0,1]$, we have ${\boldsymbol u}\big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big) = \lambda\, {\boldsymbol u}({\boldsymbol p}) + (1-\lambda)\, {\boldsymbol u}({\boldsymbol w})$.
 
-    2. For every pair of points ${\boldsymbol p}$ and ${\boldsymbol w}$ in the set and for every $\lambda \in [0,1]$, we have:
+    2. For every pair of points ${\boldsymbol p}, {\boldsymbol w} \in F$ and every $\lambda \in [0,1]$, we have:
 
         \begin{align*}
         & \sqrt{\big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big)' \, {\boldsymbol Q} \, \big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big)} \\[2ex]
-        &\quad = \big\| \lambda\, {\boldsymbol u}({\boldsymbol p}) + (1-\lambda)\, {\boldsymbol u}({\boldsymbol w}) \big\|_2
-        \quad \text{(by the first question)}\\[2ex]
-        &\quad \le \big\| \lambda\, {\boldsymbol u}({\boldsymbol p}) \big\|_2 + \big\| (1-\lambda)\, {\boldsymbol u}({\boldsymbol w}) \big\|_2
-        \quad \text{(by the triangle inequality)}\\[2ex]
-        &\quad = |\lambda| \; \| {\boldsymbol u}({\boldsymbol p}) \|_2 + |1-\lambda| \; \| {\boldsymbol u}({\boldsymbol w}) \|_2
-        \quad \text{(by the absolute homogeneity)}\\[2ex]
-        &\quad = \lambda \; \| {\boldsymbol u}({\boldsymbol p}) \|_2 + (1-\lambda) \; \| {\boldsymbol u}({\boldsymbol w}) \|_2
-        \quad (\text{since } \lambda \ge 0 \text{ and } 1-\lambda \ge 0)\\[2ex]
-        &\quad = \lambda \, \sqrt{{\boldsymbol p}' \, {\boldsymbol Q} \, {\boldsymbol p}} + (1-\lambda) \, \sqrt{{\boldsymbol w}' \, {\boldsymbol Q} \, {\boldsymbol w}}\\[2ex]
-        &\quad \le \lambda \cdot 1 + (1-\lambda) \cdot 1
-        \quad (\text{since } {\boldsymbol p}, {\boldsymbol w} \in F,~ \lambda \ge 0 \text{ and } 1-\lambda \ge 0)\\[2ex]
+        &\quad = \big\| \lambda\, {\boldsymbol u}({\boldsymbol p}) + (1-\lambda)\, {\boldsymbol u}({\boldsymbol w}) \big\|_2 \\[1ex]
+        &\qquad\quad \text{(by the first question)}\\[2ex]
+        &\quad \le \big\| \lambda\, {\boldsymbol u}({\boldsymbol p}) \big\|_2 + \big\| (1-\lambda)\, {\boldsymbol u}({\boldsymbol w}) \big\|_2 \\[1ex]
+        &\qquad\quad \text{(by the triangle inequality)}\\[2ex]
+        &\quad = |\lambda| \; \| {\boldsymbol u}({\boldsymbol p}) \|_2 + |1-\lambda| \; \| {\boldsymbol u}({\boldsymbol w}) \|_2 \\[1ex]
+        &\qquad\quad \text{(by the absolute homogeneity)}\\[2ex]
+        &\quad = \lambda \; \| {\boldsymbol u}({\boldsymbol p}) \|_2 + (1-\lambda) \; \| {\boldsymbol u}({\boldsymbol w}) \|_2 \\[1ex]
+        &\qquad\quad (\text{since } \lambda \ge 0 \text{ and } 1-\lambda \ge 0)\\[2ex]
+        &\quad = \lambda \, \sqrt{{\boldsymbol p}' \, {\boldsymbol Q} \, {\boldsymbol p}} + (1-\lambda) \, \sqrt{{\boldsymbol w}' \, {\boldsymbol Q} \, {\boldsymbol w}} \\[1ex]
+        &\qquad\quad \text{(by the first question)}\\[2ex]
+        &\quad \le \lambda \cdot 1 + (1-\lambda) \cdot 1 \\[1ex]
+        &\qquad\quad (\text{since } {\boldsymbol p}, {\boldsymbol w} \in F,~ \lambda \ge 0 \text{ and } 1-\lambda \ge 0)\\[2ex]
         &\quad = 1
         \end{align*}
 
-        Then $\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}$ belongs to the set and, therefore, the set is convex.
+        Therefore, $\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w} \in F$, and the set is convex.
 
     3. We have:
 
@@ -422,7 +416,7 @@ title: "Exercises · Convex sets"
 
         - if $x_1=\pm\sqrt{\frac{2}{3}}$, then $2-3\,x_1^2=0$ and $x_2=\frac{x_1}{2}=\pm\frac{1}{\sqrt{6}}$; in the same way, if $x_2=\pm\sqrt{\frac{2}{3}}$, then $x_1=\pm\frac{1}{\sqrt{6}}$.
 
-        The set $F$ is the region inside (and on) an ellipse whose axes are the lines $x_2 = x_1$ and $x_2 = -x_1$ (red). The figure shows the reference points (black), the point $\big(\frac{1}{2},\frac{1}{2}\big)$ that belongs to $F$ (blue) and the point $\big(\frac{1}{2},-\frac{1}{2}\big)$ that does not belong to $F$ (violet).
+        The set $F$ is the region inside (and on the boundary of) an ellipse whose axes are the lines $x_2 = x_1$ and $x_2 = -x_1$ (red). The figure shows the reference points (black), the point $\big(\frac{1}{2},\frac{1}{2}\big)$ that belongs to $F$ (blue) and the point $\big(\frac{1}{2},-\frac{1}{2}\big)$ that does not belong to $F$ (violet).
 
         ![Figure 4](../img/ex-01-convex-sets/fig04.svg){ .fig .ovale loading=lazy style="width:50%" }
 
@@ -461,9 +455,9 @@ title: "Exercises · Convex sets"
     2. To show that a set is not convex, it is enough to find two points of the set and one scalar $\lambda \in [0,1]$ whose convex combination does not belong to the set. Take
 
         $$
-        {\boldsymbol p}=\begin{pmatrix} -\frac{3}{2} \\[0.6ex] 0 \end{pmatrix},
+        {\boldsymbol q}^{(1)}=\begin{pmatrix} -\frac{3}{2} \\[0.6ex] 0 \end{pmatrix},
         \qquad
-        {\boldsymbol w}=\begin{pmatrix} \frac{3}{2} \\[0.6ex] 0 \end{pmatrix}
+        {\boldsymbol q}^{(2)}=\begin{pmatrix} \frac{3}{2} \\[0.6ex] 0 \end{pmatrix}
         \qquad \text{and} \qquad
         \lambda = \frac{1}{2}.
         $$
@@ -477,29 +471,23 @@ title: "Exercises · Convex sets"
 
         The convex combination does not belong to $A$: the set $A$ is not convex.
 
-    3. For every pair of points ${\boldsymbol p}$ and ${\boldsymbol w}$ in the set $B_1$ and for every $\lambda \in [0,1]$, we have:
+    3. Let $k \in \{1,2\}$. The set $B_k$ is defined by the bounds $0 \le x_1 \le u_1$ and $0 \le x_2 \le u_2$, with $(u_1,u_2) = (4,1)$ for $B_1$ and $(u_1,u_2) = (1,4)$ for $B_2$. For every pair of points ${\boldsymbol p}, {\boldsymbol w} \in B_k$ and every $\lambda \in [0,1]$, for each coordinate $i \in \{1,2\}$ we have:
 
         \begin{align*}
-        & \lambda p_1 + (1-\lambda) w_1 \ge \lambda \cdot 0 + (1-\lambda) \cdot 0 = 0
-        \quad (\text{since } {\boldsymbol p}, {\boldsymbol w} \in B_1,~ \lambda \ge 0 \text{ and } 1-\lambda \ge 0)\\[2ex]
-        & \lambda p_1 + (1-\lambda) w_1 \le \lambda \cdot 4 + (1-\lambda) \cdot 4 = 4
-        \quad (\text{since } {\boldsymbol p}, {\boldsymbol w} \in B_1,~ \lambda \ge 0 \text{ and } 1-\lambda \ge 0)\\[2ex]
-        & \lambda p_2 + (1-\lambda) w_2 \ge \lambda \cdot 0 + (1-\lambda) \cdot 0 = 0
-        \quad (\text{since } {\boldsymbol p}, {\boldsymbol w} \in B_1,~ \lambda \ge 0 \text{ and } 1-\lambda \ge 0)\\[2ex]
-        & \lambda p_2 + (1-\lambda) w_2 \le \lambda \cdot 1 + (1-\lambda) \cdot 1 = 1
-        \quad (\text{since } {\boldsymbol p}, {\boldsymbol w} \in B_1,~ \lambda \ge 0 \text{ and } 1-\lambda \ge 0)
+        \lambda p_i + (1-\lambda) w_i
+        &\in \big[\,\lambda \cdot 0 + (1-\lambda) \cdot 0,~~ \lambda\, u_i + (1-\lambda)\, u_i\,\big] \\[1ex]
+        &\qquad\quad (\text{since } p_i, w_i \in [0,u_i],~ \lambda \ge 0 \text{ and } 1-\lambda \ge 0)\\[2ex]
+        &= [\,0,~u_i\,]
         \end{align*}
 
-        Then $\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}$ belongs to the set and, therefore, the set is convex.
-
-        The proof for $B_2$ is the same, exchanging the roles of the bounds $1$ and $4$.
+        Therefore, $\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w} \in B_k$, and the set $B_k$ is convex.
 
     4. Take
 
         $$
-        {\boldsymbol p}=\begin{pmatrix} 1 \\[0.3ex] 4 \end{pmatrix} \in B_2,
+        {\boldsymbol q}^{(1)}=\begin{pmatrix} 1 \\[0.3ex] 4 \end{pmatrix} \in B_2,
         \qquad
-        {\boldsymbol w}=\begin{pmatrix} 4 \\[0.3ex] 1 \end{pmatrix} \in B_1
+        {\boldsymbol q}^{(2)}=\begin{pmatrix} 4 \\[0.3ex] 1 \end{pmatrix} \in B_1
         \qquad \text{and} \qquad
         \lambda = \frac{1}{2}.
         $$
@@ -512,4 +500,4 @@ title: "Exercises · Convex sets"
 
         which does not belong to $B_1$ (since $x_2 = \frac{5}{2} > 1$) nor to $B_2$ (since $x_1 = \frac{5}{2} > 1$), hence it does not belong to $B$: the set $B$ is not convex.
 
-        The intersection of convex sets is always convex (chapter «Convex sets»), while the union of two convex sets, as $B = B_1 \cup B_2$, may be not convex.
+        The intersection of convex sets is always convex (chapter «Convex sets»), while the union of two convex sets, as $B = B_1 \cup B_2$, may not be convex.

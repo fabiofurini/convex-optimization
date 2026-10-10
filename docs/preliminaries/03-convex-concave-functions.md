@@ -98,7 +98,7 @@ title: "Convex and concave functions"
 
     ![Figure 3](../img/03-convex-concave-functions/fig03.svg){ .fig .ovale loading=lazy style="width:50%" }
 
-    To prove that the function is convex in its domain, we observe that for every pair of points $p,w\in\R$ and every $\lambda\in[0,1]$, we have:
+    For every pair of points $p,w\in\R$ and every $\lambda\in[0,1]$, we have:
 
     \begin{align*}
     f\big(\lambda p+(1-\lambda)w\big)
@@ -129,7 +129,7 @@ title: "Convex and concave functions"
 
     ![Figure 4](../img/03-convex-concave-functions/fig04.svg){ .fig .ovale loading=lazy style="width:50%" }
 
-    To prove that the function is convex in its domain, we observe that for every pair of points $p,w\in\R$ and every $\lambda\in[0,1]$, we have:
+    For every pair of points $p,w\in\R$ and every $\lambda\in[0,1]$, we have:
 
     \begin{align*}
     f\big(\lambda p+(1-\lambda)w\big)
@@ -165,7 +165,7 @@ title: "Convex and concave functions"
 
     ![Figure 5](../img/03-convex-concave-functions/fig05.svg){ .fig .ovale loading=lazy style="width:62%" }
 
-    To prove that the function is convex in its domain, we observe that for every pair of points ${\boldsymbol p} = \begin{pmatrix} p_1 \\ p_2 \end{pmatrix}, {\boldsymbol w} = \begin{pmatrix} w_1 \\ w_2 \end{pmatrix} \in \R^2$ and every $\lambda \in [0,1]$, we have:
+    For every pair of points ${\boldsymbol p} = \begin{pmatrix} p_1 \\ p_2 \end{pmatrix}, {\boldsymbol w} = \begin{pmatrix} w_1 \\ w_2 \end{pmatrix} \in \R^2$ and every $\lambda \in [0,1]$, we have:
 
     \begin{align*}
     f\big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big)
@@ -199,15 +199,15 @@ title: "Convex and concave functions"
 
     ![Figure 6](../img/03-convex-concave-functions/fig06.svg){ .fig .ovale loading=lazy style="width:62%" }
 
-    To prove that the function is convex in its domain, we observe that for every pair of points ${\boldsymbol p} = \begin{pmatrix} p_1 \\ p_2 \end{pmatrix}, {\boldsymbol w} = \begin{pmatrix} w_1 \\ w_2 \end{pmatrix} \in \R^2$ and every $\lambda \in [0,1]$, we have:
+    For every pair of points ${\boldsymbol p} = \begin{pmatrix} p_1 \\ p_2 \end{pmatrix}, {\boldsymbol w} = \begin{pmatrix} w_1 \\ w_2 \end{pmatrix} \in \R^2$ and every $\lambda \in [0,1]$, we have:
 
     \begin{align*}
     f\big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big)
     &= (\lambda p_1+(1-\lambda)w_1)^2+(\lambda p_2+(1-\lambda)w_2)^2-9 \\[2ex]
-    &\le \lambda p_1^2+(1-\lambda)w_1^2+\lambda p_2^2+(1-\lambda)w_2^2-9 \\[2ex]
-    &\hspace{1cm} \text{(by inequality \eqref{eq:squares}, twice)} \\[2ex]
-    &= \lambda(p_1^2+p_2^2-9)+(1-\lambda)(w_1^2+w_2^2-9) \\[2ex]
-    &\hspace{1cm} (\text{since } \lambda + (1-\lambda) = 1) \\[2ex]
+    &\le \lambda p_1^2+(1-\lambda)w_1^2+\lambda p_2^2+(1-\lambda)w_2^2-9 \\[1ex]
+    &\qquad \text{(by inequality \eqref{eq:squares}, twice)} \\[2ex]
+    &= \lambda(p_1^2+p_2^2-9)+(1-\lambda)(w_1^2+w_2^2-9) \\[1ex]
+    &\qquad (\text{since } \lambda + (1-\lambda) = 1) \\[2ex]
     &= \lambda f({\boldsymbol p}) + (1-\lambda) f({\boldsymbol w})
     \end{align*}
 
@@ -225,7 +225,7 @@ title: "Convex and concave functions"
 
 !!! esempio "Example 3.5: the absolute value is a convex function"
 
-    Consider the function $f: \R \rightarrow \R$, $f(x) = |x|$. To prove that the function is convex in its domain, we observe that for every pair of points $p, w \in \R$ and every $\lambda \in [0,1]$, we have:
+    Consider the function $f: \R \rightarrow \R$, $f(x) = |x|$. For every pair of points $p, w \in \R$ and every $\lambda \in [0,1]$, we have:
 
     \begin{align*}
     f\big(\lambda p + (1-\lambda) w\big)
@@ -258,16 +258,16 @@ title: "Convex and concave functions"
 
 !!! esempio "Example 3.6: the minimum of two linear functions is a concave function"
 
-    Consider the function $f: [-2,4] \rightarrow \R$, $f(x) = \min\{\, x+2, \; 4-\frac{1}{2}x \,\}$. To prove that the function is concave in its domain, we observe that for every pair of points $p, w \in [-2,4]$ and every $\lambda \in [0,1]$, we have:
+    Consider the function $f: [-2,4] \rightarrow \R$, $f(x) = \min\{\, x+2, \; 4-\frac{1}{2}x \,\}$. For every pair of points $p, w \in [-2,4]$ and every $\lambda \in [0,1]$, we have:
 
     \begin{align*}
     f\big(\lambda p + (1-\lambda) w\big)
     &= \min\Big\{\, \lambda p + (1-\lambda) w + 2, \; 4 - \tfrac{1}{2}\big(\lambda p + (1-\lambda) w\big) \,\Big\} \\[2ex]
-    &= \min\Big\{\, \lambda (p+2) + (1-\lambda)(w+2), \; \lambda \big(4-\tfrac{1}{2}p\big) + (1-\lambda)\big(4-\tfrac{1}{2}w\big) \,\Big\} \\[2ex]
-    &\hspace{1cm} (\text{since } \lambda + (1-\lambda) = 1) \\[2ex]
-    &\ge \min\Big\{\, \lambda f(p) + (1-\lambda) f(w), \; \lambda f(p) + (1-\lambda) f(w) \,\Big\} \\[2ex]
-    &\hspace{1cm} (\text{since } f(p) \le p+2,~ f(p) \le 4-\tfrac{1}{2}p,~ f(w) \le w+2, \\
-    &\hspace{1.3cm} f(w) \le 4-\tfrac{1}{2}w,~ \lambda \ge 0 \text{ and } 1-\lambda \ge 0) \\[2ex]
+    &= \min\Big\{\, \lambda (p+2) + (1-\lambda)(w+2), \; \lambda \big(4-\tfrac{1}{2}p\big) + (1-\lambda)\big(4-\tfrac{1}{2}w\big) \,\Big\} \\[1ex]
+    &\qquad (\text{since } \lambda + (1-\lambda) = 1) \\[2ex]
+    &\ge \min\Big\{\, \lambda f(p) + (1-\lambda) f(w), \; \lambda f(p) + (1-\lambda) f(w) \,\Big\} \\[1ex]
+    &\qquad (\text{since } f(p) \le p+2,~ f(p) \le 4-\tfrac{1}{2}p,~ f(w) \le w+2, \\
+    &\qquad\quad f(w) \le 4-\tfrac{1}{2}w,~ \lambda \ge 0 \text{ and } 1-\lambda \ge 0) \\[2ex]
     &= \lambda f(p) + (1-\lambda) f(w)
     \end{align*}
 
@@ -361,9 +361,7 @@ title: "Convex and concave functions"
     Therefore,
 
     $$
-    f(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w})
-    \le
-    \lambda f({\boldsymbol p}) + (1-\lambda) f({\boldsymbol w})
+    f\big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big) \le \lambda f({\boldsymbol p}) + (1-\lambda) f({\boldsymbol w})
     $$
 
     By nature, the domain $\mathbb{R}^{n}$ is a convex set. Accordingly, the function is convex in its domain. <span class="qed">□</span>
@@ -397,9 +395,7 @@ title: "Convex and concave functions"
     Therefore,
 
     $$
-    f(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w})
-    \le
-    \lambda f({\boldsymbol p}) + (1-\lambda) f({\boldsymbol w})
+    f\big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big) \le \lambda f({\boldsymbol p}) + (1-\lambda) f({\boldsymbol w})
     $$
 
     By nature, the domain $\mathbb{R}^{n}$ is a convex set. Accordingly, the function is convex in its domain. <span class="qed">□</span>
@@ -436,7 +432,7 @@ title: "Convex and concave functions"
 
     ![Figure 9](../img/03-convex-concave-functions/fig09.svg){ .fig .ovale loading=lazy style="width:62%" }
 
-    To prove that the function is convex in its domain, we observe that for every pair of points ${\boldsymbol p}, {\boldsymbol w} \in \R^2$ and every $\lambda \in [0,1]$, we have:
+    For every pair of points ${\boldsymbol p}, {\boldsymbol w} \in \R^2$ and every $\lambda \in [0,1]$, we have:
 
     \begin{align*}
     f\big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big)
@@ -483,12 +479,12 @@ title: "Convex and concave functions"
     &= \lambda^2 \|\boldsymbol{p}\|_2^2 + (1 - \lambda)^2 \|\boldsymbol{w}\|_2^2
     + 2\lambda(1 - \lambda)\,(\boldsymbol{p}' \; \boldsymbol{w}) \\[2ex]
     &\le \lambda^2 \|\boldsymbol{p}\|_2^2 + (1 - \lambda)^2 \|\boldsymbol{w}\|_2^2
-    + 2\lambda(1 - \lambda)\,\|\boldsymbol{p}\|_2\,\|\boldsymbol{w}\|_2  \\[2ex]
-    &\hspace{1cm}  \text{(by the Cauchy--Schwarz inequality)} \\[2ex]
+    + 2\lambda(1 - \lambda)\,\|\boldsymbol{p}\|_2\,\|\boldsymbol{w}\|_2  \\[1ex]
+    &\qquad \text{(by the Cauchy--Schwarz inequality)} \\[2ex]
     &\le \lambda^2 \|\boldsymbol{p}\|_2^2 + (1 - \lambda)^2 \|\boldsymbol{w}\|_2^2
-    + \lambda(1 - \lambda)\|\boldsymbol{p}\|_2^2 + \lambda(1 - \lambda)\|\boldsymbol{w}\|_2^2 \\[2ex]
-    &\hspace{1cm}\text{(since $2ab\le a^2+b^2$ for all $a,b \in \R$,} \\
-    &\hspace{1.3cm}\text{with $a=\|\boldsymbol{p}\|_2$ and $b=\|\boldsymbol{w}\|_2$)} \\[2ex]
+    + \lambda(1 - \lambda)\|\boldsymbol{p}\|_2^2 + \lambda(1 - \lambda)\|\boldsymbol{w}\|_2^2 \\[1ex]
+    &\qquad \text{(since $2ab\le a^2+b^2$ for all $a,b \in \R$,} \\
+    &\qquad\quad \text{with $a=\|\boldsymbol{p}\|_2$ and $b=\|\boldsymbol{w}\|_2$)} \\[2ex]
     &= \big(\lambda^2+\lambda(1-\lambda)\big)\|\boldsymbol{p}\|_2^2
     + \big((1-\lambda)^2+\lambda(1-\lambda)\big)\|\boldsymbol{w}\|_2^2 \\[2ex]
     &= \lambda\|\boldsymbol{p}\|_2^2 + (1 - \lambda)\|\boldsymbol{w}\|_2^2 \\[2ex]
@@ -498,9 +494,7 @@ title: "Convex and concave functions"
     Therefore,
 
     $$
-    f(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w})
-    \le
-    \lambda f({\boldsymbol p}) + (1-\lambda) f({\boldsymbol w})
+    f\big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big) \le \lambda f({\boldsymbol p}) + (1-\lambda) f({\boldsymbol w})
     $$
 
     By nature, the domain $\mathbb{R}^{n}$ is a convex set. Accordingly, the function is convex in its domain. <span class="qed">□</span>
@@ -516,8 +510,8 @@ title: "Convex and concave functions"
     &= \big(\lambda \boldsymbol{p} + (1 - \lambda) \boldsymbol{w}\big)' \big(\lambda \boldsymbol{p} + (1 - \lambda) \boldsymbol{w}\big) \\[2ex]
     &= \lambda^2 \|\boldsymbol{p}\|_2^2 + (1 - \lambda)^2 \|\boldsymbol{w}\|_2^2 + 2\lambda(1 - \lambda)\,(\boldsymbol{p}' \boldsymbol{w}) \\[2ex]
     &= \lambda^2 \|\boldsymbol{p}\|_2^2 + (1 - \lambda)^2 \|\boldsymbol{w}\|_2^2 \\
-    &\qquad + \lambda(1 - \lambda)\bigl(\|\boldsymbol{p}\|_2^2 + \|\boldsymbol{w}\|_2^2 - \|\boldsymbol{p}-\boldsymbol{w}\|_2^2\bigr) \\[2ex]
-    &\hspace{1cm}\text{(since } \|\boldsymbol{p}-\boldsymbol{w}\|_2^2 = \|\boldsymbol{p}\|_2^2+\|\boldsymbol{w}\|_2^2-2\boldsymbol{p}'\boldsymbol{w}\text{)} \\[2ex]
+    &\qquad + \lambda(1 - \lambda)\bigl(\|\boldsymbol{p}\|_2^2 + \|\boldsymbol{w}\|_2^2 - \|\boldsymbol{p}-\boldsymbol{w}\|_2^2\bigr) \\[1ex]
+    &\qquad \text{(since } \|\boldsymbol{p}-\boldsymbol{w}\|_2^2 = \|\boldsymbol{p}\|_2^2+\|\boldsymbol{w}\|_2^2-2\boldsymbol{p}'\boldsymbol{w}\text{)} \\[2ex]
     &= \big(\lambda^2+\lambda(1-\lambda)\big)\|\boldsymbol{p}\|_2^2 + \big((1-\lambda)^2+\lambda(1-\lambda)\big)\|\boldsymbol{w}\|_2^2 \\
     &\qquad - \lambda(1-\lambda)\|\boldsymbol{p}-\boldsymbol{w}\|_2^2 \\[2ex]
     &= \lambda\|\boldsymbol{p}\|_2^2 + (1 - \lambda)\|\boldsymbol{w}\|_2^2 - \lambda(1-\lambda)\|\boldsymbol{p}-\boldsymbol{w}\|_2^2 \\[2ex]
@@ -528,9 +522,7 @@ title: "Convex and concave functions"
     Therefore,
 
     $$
-    f(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w})
-    \le
-    \lambda f({\boldsymbol p}) + (1-\lambda) f({\boldsymbol w})
+    f\big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big) \le \lambda f({\boldsymbol p}) + (1-\lambda) f({\boldsymbol w})
     $$
 
     By nature, the domain $\mathbb{R}^{n}$ is a convex set. Accordingly, the function is convex in its domain. <span class="qed">□</span>
@@ -567,7 +559,7 @@ title: "Convex and concave functions"
 
     ![Figure 10](../img/03-convex-concave-functions/fig10.svg){ .fig .ovale loading=lazy style="width:62%" }
 
-    To prove that the function is convex in its domain, we observe that for every pair of points ${\boldsymbol p}, {\boldsymbol w} \in \R^2$ and every $\lambda \in [0,1]$, we have:
+    For every pair of points ${\boldsymbol p}, {\boldsymbol w} \in \R^2$ and every $\lambda \in [0,1]$, we have:
 
     \begin{align*}
     f\big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big)
@@ -603,8 +595,8 @@ title: "Convex and concave functions"
     \begin{align*}
     (-f)\big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big)
     &= -f\big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big) \\[2ex]
-    &\ge -\big(\lambda f({\boldsymbol p}) + (1-\lambda) f({\boldsymbol w})\big) \\[2ex]
-    &\hspace{1cm} \text{(since $f$ is convex, and $-1$ reverses the inequality)} \\[2ex]
+    &\ge -\big(\lambda f({\boldsymbol p}) + (1-\lambda) f({\boldsymbol w})\big) \\[1ex]
+    &\qquad \text{(since $f$ is convex, and $-1$ reverses the inequality)} \\[2ex]
     &= \lambda \, (-f)({\boldsymbol p}) + (1-\lambda) \, (-f)({\boldsymbol w})
     \end{align*}
 
@@ -629,8 +621,8 @@ title: "Convex and concave functions"
     \begin{align*}
     (\alpha f + \beta g)\big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big)
     &= \alpha f\big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big) + \beta g\big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big) \\[2ex]
-    &\le \alpha \big(\lambda f({\boldsymbol p}) + (1-\lambda) f({\boldsymbol w})\big) + \beta \big(\lambda g({\boldsymbol p}) + (1-\lambda) g({\boldsymbol w})\big) \\[2ex]
-    &\hspace{1cm} \text{(since $f$ and $g$ are convex, and $\alpha \ge 0$, $\beta \ge 0$)} \\[2ex]
+    &\le \alpha \big(\lambda f({\boldsymbol p}) + (1-\lambda) f({\boldsymbol w})\big) + \beta \big(\lambda g({\boldsymbol p}) + (1-\lambda) g({\boldsymbol w})\big) \\[1ex]
+    &\qquad \text{(since $f$ and $g$ are convex, and $\alpha \ge 0$, $\beta \ge 0$)} \\[2ex]
     &= \lambda \big(\alpha f({\boldsymbol p}) + \beta g({\boldsymbol p})\big) + (1-\lambda)\big(\alpha f({\boldsymbol w}) + \beta g({\boldsymbol w})\big) \\[2ex]
     &= \lambda \, (\alpha f + \beta g)({\boldsymbol p}) + (1-\lambda) \, (\alpha f + \beta g)({\boldsymbol w})
     \end{align*}
@@ -659,26 +651,25 @@ title: "Convex and concave functions"
 
 ??? dimostrazione "Proof"
 
-    For every pair of points ${\boldsymbol p},{\boldsymbol w} \in \bigcap_{i=1}^m D_i$ and every $\lambda \in [0,1]$, since each domain $D_i$ is convex, we have $\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w} \in \bigcap_{i=1}^m D_i$. Let $k \in \{1,2,\dots,m\}$ be such that $f(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}) = f_k(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w})$. We have:
+    For every pair of points ${\boldsymbol p},{\boldsymbol w} \in \bigcap_{i=1}^m D_i$ and every $\lambda \in [0,1]$, we have:
 
     \begin{align*}
     f\big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big)
     &= \max \big\{ f_i(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}) : i \in \{1,2,\dots,m\} \big\} \\[2ex]
-    &= f_k\big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big) \\[2ex]
+    &= f_k\big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big) \\[1ex]
+    &\qquad \text{(for an index $k \in \{1,2,\dots,m\}$ attaining the maximum)} \\[2ex]
     &\le \lambda f_k({\boldsymbol p}) + (1-\lambda) f_k({\boldsymbol w})
     \quad \text{(since $f_k$ is convex)} \\[2ex]
     &\le \lambda \max \big\{ f_i({\boldsymbol p}) : i \in \{1,2,\dots,m\} \big\} \\
-    &\qquad + (1-\lambda) \max \big\{ f_i({\boldsymbol w}) : i \in \{1,2,\dots,m\} \big\} \\[2ex]
-    &\hspace{1cm} (\text{since } \lambda \ge 0 \text{ and } 1-\lambda \ge 0) \\[2ex]
+    &\qquad + (1-\lambda) \max \big\{ f_i({\boldsymbol w}) : i \in \{1,2,\dots,m\} \big\} \\[1ex]
+    &\qquad (\text{since } \lambda \ge 0 \text{ and } 1-\lambda \ge 0) \\[2ex]
     &= \lambda f({\boldsymbol p}) + (1-\lambda) f({\boldsymbol w})
     \end{align*}
 
     Therefore,
 
     $$
-    f(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w})
-    \le
-    \lambda f({\boldsymbol p}) + (1-\lambda) f({\boldsymbol w})
+    f\big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big) \le \lambda f({\boldsymbol p}) + (1-\lambda) f({\boldsymbol w})
     $$
 
     The domain $\bigcap_{i=1}^m D_i$ is a convex set, since it is the intersection of convex sets. Accordingly, the function $f$ is convex in its domain. The statement for the minimum of concave functions follows by applying this one to $-f_1, \dots, -f_m$. <span class="qed">□</span>
@@ -719,16 +710,23 @@ title: "Convex and concave functions"
 
 ??? dimostrazione "Proof"
 
-    For every pair of points ${\boldsymbol p}$ and ${\boldsymbol w}$ in the set and every $\lambda \in [0,1]$, since ${\boldsymbol p},{\boldsymbol w} \in D_i$ and each domain $D_i$ is convex, we have $\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w} \in \bigcap_{i=1}^m D_i$. Moreover, for every $i \in \{1,2,\dots,m\}$, we have:
+    For every pair of points ${\boldsymbol p}$ and ${\boldsymbol w}$ in the set and every $\lambda \in [0,1]$, the point $\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}$ belongs to $\bigcap_{i=1}^m D_i$, since ${\boldsymbol p},{\boldsymbol w} \in D_i$ and each domain $D_i$ is convex, and for every $i \in \{1,2,\dots,m\}$ we have:
 
     \begin{align*}
     f_i\big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big)
     &\le \lambda f_i({\boldsymbol p}) + (1-\lambda) f_i({\boldsymbol w}) \quad \text{(since $f_i$ is convex)} \\[2ex]
-    &\le \lambda \, 0 + (1-\lambda) \, 0 \quad \text{(since $f_i({\boldsymbol p}) \le 0$, $f_i({\boldsymbol w}) \le 0$, $\lambda \ge 0$ and $1-\lambda \ge 0$)} \\[2ex]
+    &\le \lambda \, 0 + (1-\lambda) \, 0 \\[1ex]
+    &\qquad \text{(since $f_i({\boldsymbol p}) \le 0$, $f_i({\boldsymbol w}) \le 0$, $\lambda \ge 0$ and $1-\lambda \ge 0$)} \\[2ex]
     &= 0
     \end{align*}
 
-    Then $\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}$ belongs to the set and, therefore, the set is convex. <span class="qed">□</span>
+    Therefore,
+
+    $$
+    f_i\big(\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}\big) \le 0, \qquad \forall i \in \{1,2,\dots,m\}
+    $$
+
+    Accordingly, $\lambda {\boldsymbol p} + (1-\lambda){\boldsymbol w}$ belongs to the set and the set is convex. <span class="qed">□</span>
 
 <a id="box-25-exSetFromConvexCircle"></a>
 
