@@ -699,7 +699,7 @@ title: "Exercises · Optimization problems"
 
         with equality only for $x=-1$ and only for $x=2$, respectively. The unique point of maximum is $x=-1$, with maximum $8$, and the unique point of minimum is $x=2$, with minimum $-19$: both points of the first two questions are global optima.
 
-    4. The graph of the function is red; the domain is the red part of the $x$-axis, the points of (global) minimum and maximum are blue. Since $f$ takes negative values, the $x$-axis is drawn at the bottom of the figure. At the endpoints we have $f(-2) = -3$ and $f(3) = -8$.
+    4. The graph of the function is red; the domain is the red part of the $x$-axis, the points of (global) minimum and maximum are blue. Since $f$ takes negative values, the $x$-axis is drawn at the bottom of the figure. At the endpoints we have $f(-2) = -3$ and $f(3) = -8$: since $f$ is increasing near both endpoints, $x=-2$ is a point of local minimum and $x=3$ is a point of local maximum, which are not global, and they are violet.
 
         ![Figure 11](../img/ex-05-optimization-problems/fig11.svg){ .fig .ovale loading=lazy style="width:50%" }
 
@@ -915,7 +915,7 @@ title: "Exercises · Optimization problems"
 
         with equality only for $x=-1$ and only for $x=2$, respectively. The unique point of maximum is $x=-1$, with maximum $12$, and the unique point of minimum is $x=2$, with minimum $-15$: both points of the first two questions are global optima.
 
-    4. The graph of the function is red; the domain is the red part of the $x$-axis, the points of (global) minimum and maximum are blue. Since $f$ takes negative values, the $x$-axis is drawn at the bottom of the figure. At the right endpoint we have $f(3) = -4$.
+    4. The graph of the function is red; the domain is the red part of the $x$-axis, the points of (global) minimum and maximum are blue. Since $f$ takes negative values, the $x$-axis is drawn at the bottom of the figure. At the right endpoint we have $f(3) = -4$: since $f$ is increasing near $x=3$, it is a point of local maximum which is not global, and it is violet.
 
         ![Figure 14](../img/ex-05-optimization-problems/fig14.svg){ .fig .ovale loading=lazy style="width:50%" }
 
