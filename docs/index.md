@@ -9,6 +9,9 @@ hide:
 
 ![Under construction: the website and the course material are still being written](img/under-construction.svg){ width="560" }
 
+**Website under construction.** For now only the first two parts of the course are online,
+*Preliminaries* and *Optimization problems*: the others will follow soon.
+
 # Convex Optimization
 
 Teaching material conceived and developed by **[Fabio Furini](https://fabiofurini.github.io/)**, associate
