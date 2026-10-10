@@ -6,7 +6,7 @@ title: "Quadratic functions"
 
 <div class="info-capitolo" markdown>
 
-**Part 1 · Preliminaries · Chapter 4** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](../pdf/lecture-notes-1-preliminaries.pdf) · [:material-pencil: Exercises](../exercises/ex-04-quadratic-functions.md)
+**Part 1 · Preliminaries · Chapter 4** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](../pdf/lecture-notes-1-preliminaries.pdf) · [:material-presentation: Slides](../pdf/slides-04-quadratic-functions.pdf) · [:material-pencil: Exercises](../exercises/ex-04-quadratic-functions.md)
 
 </div>
 

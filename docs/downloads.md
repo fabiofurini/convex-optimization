@@ -49,3 +49,17 @@ The lecture notes and the exercise books in PDF, updated at every publication of
     [:octicons-download-24: exercises-2-optimization-problems.pdf](pdf/exercises-2-optimization-problems.pdf)
 
 </div>
+
+## Slides
+
+### Preliminaries
+
+- :material-presentation: [Chapter 1 · Convex sets](pdf/slides-01-convex-sets.pdf)
+- :material-presentation: [Chapter 2 · Functions of several variables](pdf/slides-02-functions-several-variables.pdf)
+- :material-presentation: [Chapter 3 · Convex and concave functions](pdf/slides-03-convex-concave-functions.pdf)
+- :material-presentation: [Chapter 4 · Quadratic functions](pdf/slides-04-quadratic-functions.pdf)
+
+### Optimization problems
+
+- :material-presentation: [Chapter 5 · Optimization problems](pdf/slides-05-optimization-problems.pdf)
+- :material-presentation: [Chapter 6 · Convex and concave optimization problems](pdf/slides-06-convex-concave-problems.pdf)

@@ -6,7 +6,7 @@ title: "Optimization problems"
 
 <div class="info-capitolo" markdown>
 
-**Part 2 · Optimization problems · Chapter 5** · [:material-file-pdf-box: Lecture notes, volume 2 (PDF)](../pdf/lecture-notes-2-optimization-problems.pdf) · [:material-pencil: Exercises](../exercises/ex-05-optimization-problems.md)
+**Part 2 · Optimization problems · Chapter 5** · [:material-file-pdf-box: Lecture notes, volume 2 (PDF)](../pdf/lecture-notes-2-optimization-problems.pdf) · [:material-presentation: Slides](../pdf/slides-05-optimization-problems.pdf) · [:material-pencil: Exercises](../exercises/ex-05-optimization-problems.md)
 
 </div>
 

@@ -6,7 +6,7 @@ title: "Convex sets"
 
 <div class="info-capitolo" markdown>
 
-**Part 1 · Preliminaries · Chapter 1** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](../pdf/lecture-notes-1-preliminaries.pdf) · [:material-pencil: Exercises](../exercises/ex-01-convex-sets.md)
+**Part 1 · Preliminaries · Chapter 1** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](../pdf/lecture-notes-1-preliminaries.pdf) · [:material-presentation: Slides](../pdf/slides-01-convex-sets.pdf) · [:material-pencil: Exercises](../exercises/ex-01-convex-sets.md)
 
 </div>
 

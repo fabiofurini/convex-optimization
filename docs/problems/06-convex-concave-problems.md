@@ -6,7 +6,7 @@ title: "Convex and concave optimization problems"
 
 <div class="info-capitolo" markdown>
 
-**Part 2 · Optimization problems · Chapter 6** · [:material-file-pdf-box: Lecture notes, volume 2 (PDF)](../pdf/lecture-notes-2-optimization-problems.pdf) · [:material-pencil: Exercises](../exercises/ex-06-convex-concave-problems.md)
+**Part 2 · Optimization problems · Chapter 6** · [:material-file-pdf-box: Lecture notes, volume 2 (PDF)](../pdf/lecture-notes-2-optimization-problems.pdf) · [:material-presentation: Slides](../pdf/slides-06-convex-concave-problems.pdf) · [:material-pencil: Exercises](../exercises/ex-06-convex-concave-problems.md)
 
 </div>
 

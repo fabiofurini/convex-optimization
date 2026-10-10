@@ -6,7 +6,7 @@ title: "Functions of several variables"
 
 <div class="info-capitolo" markdown>
 
-**Part 1 · Preliminaries · Chapter 2** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](../pdf/lecture-notes-1-preliminaries.pdf) · [:material-pencil: Exercises](../exercises/ex-02-functions-several-variables.md)
+**Part 1 · Preliminaries · Chapter 2** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](../pdf/lecture-notes-1-preliminaries.pdf) · [:material-presentation: Slides](../pdf/slides-02-functions-several-variables.pdf) · [:material-pencil: Exercises](../exercises/ex-02-functions-several-variables.md)
 
 </div>
 

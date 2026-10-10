@@ -6,7 +6,7 @@ title: "Convex and concave functions"
 
 <div class="info-capitolo" markdown>
 
-**Part 1 · Preliminaries · Chapter 3** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](../pdf/lecture-notes-1-preliminaries.pdf) · [:material-pencil: Exercises](../exercises/ex-03-convex-concave-functions.md)
+**Part 1 · Preliminaries · Chapter 3** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](../pdf/lecture-notes-1-preliminaries.pdf) · [:material-presentation: Slides](../pdf/slides-03-convex-concave-functions.pdf) · [:material-pencil: Exercises](../exercises/ex-03-convex-concave-functions.md)
 
 </div>
 
