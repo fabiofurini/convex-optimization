@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Interactive lab
 
 Here you can get your hands on optimization. Each app opens in a page of its own, at full
