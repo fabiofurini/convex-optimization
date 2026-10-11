@@ -122,6 +122,7 @@ lecture notes: on the website and in the PDF you find everything in the same pla
 
 By the same author:
 
+- **[Linear Programming](https://fabiofurini.github.io/linear-programming/)** — polyhedra, the simplex algorithm, duality and modelling, with the interactive lab;
 - **[Operations Research Lab](https://fabiofurini.github.io/operations-research-lab/)** — the lab on modelling and solving optimization problems, with Python and solvers;
 - **[MIP Modelling](https://fabiofurini.github.io/mip-modelling/)** — the module on integer-variable models, with the same tools and the same style;
 - **[Mathematical Analysis 1](https://fabiofurini.github.io/mathematical-analysis-1/)** — the analysis lecture notes, with interactive graphs;
