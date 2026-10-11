@@ -75,6 +75,9 @@ extra:
     - icon: material/matrix
       link: https://fabiofurini.github.io/linear-algebra/
       name: Linear Algebra
+    - icon: material/code-braces
+      link: https://fabiofurini.github.io/algorithms/
+      name: Algorithms
   alternate:
     - name: Italiano
       link: https://fabiofurini.github.io/ottimizzazione-convessa/
