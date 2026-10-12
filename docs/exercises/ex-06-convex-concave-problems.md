@@ -6,7 +6,7 @@ title: "Exercises · Convex and concave optimization problems"
 
 <div class="info-capitolo" markdown>
 
-**Exercises · Chapter 6** · each solution opens with a click · [:material-book-open-variant: Chapter 6](../problems/06-convex-concave-problems.md) · [:material-file-pdf-box: Exercises, volume 2 (PDF)](../pdf/exercises-2-optimization-problems.pdf)
+**Exercises · Chapter 6** · each solution opens with a click · [:material-book-open-variant: Chapter 6: Convex and concave optimization problems](../problems/06-convex-concave-problems.md) · [:material-file-pdf-box: Exercises, volume 2 (PDF)](../pdf/exercises-2-optimization-problems.pdf)
 
 </div>
 

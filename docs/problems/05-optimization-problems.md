@@ -6,7 +6,7 @@ title: "Optimization problems"
 
 <div class="info-capitolo" markdown>
 
-**Part 2 · Optimization problems · Chapter 5** · [:material-file-pdf-box: Lecture notes, volume 2 (PDF)](../pdf/lecture-notes-2-optimization-problems.pdf) · [:material-presentation: Slides](../pdf/slides-05-optimization-problems.pdf) · [:material-pencil: Exercises](../exercises/ex-05-optimization-problems.md)
+**Part 2 · Optimization problems · Chapter 5** · [:material-file-pdf-box: Lecture notes, volume 2 (PDF)](../pdf/lecture-notes-2-optimization-problems.pdf) · [:material-presentation: Slides](../pdf/slides-05-optimization-problems.pdf) · [:material-pencil: Exercises: Optimization problems](../exercises/ex-05-optimization-problems.md) · [:material-gesture-tap: App: Optimum on an interval](../interactive/optimum-interval.md) · [:material-gesture-tap: App: Local and global optima](../interactive/local-optima.md)
 
 </div>
 
@@ -644,6 +644,10 @@ title: "Optimization problems"
     - <strong>Local maxima that are not global.</strong> In $N\big((-4),1\big) \cap [-4,4] = [-4,-3)$ we have $-2 \le x+2 < -1$ and then $f(x) = (x+2)^2 \le 4 = f(-4)$: the point $x=-4$ is a point of local maximum. In $N\big((\frac{1}{8}),1\big) = (-\frac{7}{8},\frac{9}{8})$ we have $0 < x+2 \le \frac{17}{8}$ when $x \le \frac{1}{8}$, so that $f(x) = (x+2)^2 \le \frac{289}{64}$, and $-\frac{15}{8} \le x-2 < 0$ when $x \ge \frac{1}{8}$, so that $f(x) = (x-2)^2+1 \le \frac{225}{64}+1 = \frac{289}{64}$; in both cases $f(x) \le f(\frac{1}{8})$: the point $x=\frac{1}{8}$ is a point of local maximum. Neither of them is a point of (global) maximum, since $f(-4) = 4 < 5$ and $f(\frac{1}{8}) = \frac{289}{64} < 5$.
 
     Consider the optimization problem $\min \{\, f(x) \text{ subject to } -4 \le x \le 4 \,\}$: a method that only looks at the points close to $x=2$ finds the local minimum $1$, but the optimal value is $z(P) = 0$, attained at $\tilde{\boldsymbol x}(P) = (-2)$.
+
+---
+
+**Exercises on this chapter:** [:material-pencil: Optimization problems](../exercises/ex-05-optimization-problems.md)
 
 <!-- laboratorio-interattivo: sezione generata da interattivi.py -->
 

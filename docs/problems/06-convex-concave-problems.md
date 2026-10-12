@@ -6,7 +6,7 @@ title: "Convex and concave optimization problems"
 
 <div class="info-capitolo" markdown>
 
-**Part 2 · Optimization problems · Chapter 6** · [:material-file-pdf-box: Lecture notes, volume 2 (PDF)](../pdf/lecture-notes-2-optimization-problems.pdf) · [:material-presentation: Slides](../pdf/slides-06-convex-concave-problems.pdf) · [:material-pencil: Exercises](../exercises/ex-06-convex-concave-problems.md)
+**Part 2 · Optimization problems · Chapter 6** · [:material-file-pdf-box: Lecture notes, volume 2 (PDF)](../pdf/lecture-notes-2-optimization-problems.pdf) · [:material-presentation: Slides](../pdf/slides-06-convex-concave-problems.pdf) · [:material-pencil: Exercises: Convex and concave optimization problems](../exercises/ex-06-convex-concave-problems.md) · [:material-gesture-tap: App: Descent to a local optimum](../interactive/local-descent.md)
 
 </div>
 
@@ -400,6 +400,10 @@ title: "Convex and concave optimization problems"
         \qquad \text{and} \qquad
         z(P) = f(1) = 6.
         $$
+
+---
+
+**Exercises on this chapter:** [:material-pencil: Convex and concave optimization problems](../exercises/ex-06-convex-concave-problems.md)
 
 <!-- laboratorio-interattivo: sezione generata da interattivi.py -->
 

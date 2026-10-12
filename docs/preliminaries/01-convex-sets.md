@@ -6,7 +6,7 @@ title: "Convex sets"
 
 <div class="info-capitolo" markdown>
 
-**Part 1 · Preliminaries · Chapter 1** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](../pdf/lecture-notes-1-preliminaries.pdf) · [:material-presentation: Slides](../pdf/slides-01-convex-sets.pdf) · [:material-pencil: Exercises](../exercises/ex-01-convex-sets.md)
+**Part 1 · Preliminaries · Chapter 1** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](../pdf/lecture-notes-1-preliminaries.pdf) · [:material-presentation: Slides](../pdf/slides-01-convex-sets.pdf) · [:material-pencil: Exercises: Convex sets](../exercises/ex-01-convex-sets.md) · [:material-gesture-tap: App: Convex combination](../interactive/convex-combination.md) · [:material-gesture-tap: App: Convexity test](../interactive/convexity-test.md) · [:material-gesture-tap: App: Balls in the q-norm](../interactive/norm-balls.md)
 
 </div>
 
@@ -422,6 +422,10 @@ title: "Convex sets"
 ![Figure 15](../img/01-convex-sets/fig15.svg){ .fig .ovale loading=lazy style="width:37%" }
 
 </div>
+
+---
+
+**Exercises on this chapter:** [:material-pencil: Convex sets](../exercises/ex-01-convex-sets.md)
 
 <!-- laboratorio-interattivo: sezione generata da interattivi.py -->
 

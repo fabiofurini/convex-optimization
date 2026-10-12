@@ -6,7 +6,7 @@ title: "Exercises · Optimization problems"
 
 <div class="info-capitolo" markdown>
 
-**Exercises · Chapter 5** · each solution opens with a click · [:material-book-open-variant: Chapter 5](../problems/05-optimization-problems.md) · [:material-file-pdf-box: Exercises, volume 2 (PDF)](../pdf/exercises-2-optimization-problems.pdf)
+**Exercises · Chapter 5** · each solution opens with a click · [:material-book-open-variant: Chapter 5: Optimization problems](../problems/05-optimization-problems.md) · [:material-file-pdf-box: Exercises, volume 2 (PDF)](../pdf/exercises-2-optimization-problems.pdf)
 
 </div>
 

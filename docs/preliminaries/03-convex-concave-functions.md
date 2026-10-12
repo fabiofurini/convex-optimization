@@ -6,7 +6,7 @@ title: "Convex and concave functions"
 
 <div class="info-capitolo" markdown>
 
-**Part 1 · Preliminaries · Chapter 3** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](../pdf/lecture-notes-1-preliminaries.pdf) · [:material-presentation: Slides](../pdf/slides-03-convex-concave-functions.pdf) · [:material-pencil: Exercises](../exercises/ex-03-convex-concave-functions.md)
+**Part 1 · Preliminaries · Chapter 3** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](../pdf/lecture-notes-1-preliminaries.pdf) · [:material-presentation: Slides](../pdf/slides-03-convex-concave-functions.pdf) · [:material-pencil: Exercises: Convex and concave functions](../exercises/ex-03-convex-concave-functions.md) · [:material-gesture-tap: App: The chord and the graph](../interactive/chord.md)
 
 </div>
 
@@ -783,6 +783,10 @@ title: "Convex and concave functions"
 !!! chiave ""
 
     The points that satisfy a finite number of constraints $f_i({\boldsymbol x}) \le 0$ with convex functions $f_i$ form a convex set. For instance, every half-space $\{{\boldsymbol x} \in \R^n : {\boldsymbol a}'{\boldsymbol x} \le b\}$, with ${\boldsymbol a} \in \R^n$ and $b \in \R$, is a convex set of this kind, since the linear function ${\boldsymbol a}'{\boldsymbol x} - b$ is convex; so is every intersection of finitely many half-spaces, as the polyhedra of linear programming.
+
+---
+
+**Exercises on this chapter:** [:material-pencil: Convex and concave functions](../exercises/ex-03-convex-concave-functions.md)
 
 <!-- laboratorio-interattivo: sezione generata da interattivi.py -->
 

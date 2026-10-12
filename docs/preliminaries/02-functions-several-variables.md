@@ -6,7 +6,7 @@ title: "Functions of several variables"
 
 <div class="info-capitolo" markdown>
 
-**Part 1 · Preliminaries · Chapter 2** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](../pdf/lecture-notes-1-preliminaries.pdf) · [:material-presentation: Slides](../pdf/slides-02-functions-several-variables.pdf) · [:material-pencil: Exercises](../exercises/ex-02-functions-several-variables.md)
+**Part 1 · Preliminaries · Chapter 2** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](../pdf/lecture-notes-1-preliminaries.pdf) · [:material-presentation: Slides](../pdf/slides-02-functions-several-variables.pdf) · [:material-pencil: Exercises: Functions of several variables](../exercises/ex-02-functions-several-variables.md) · [:material-gesture-tap: App: Level sets and gradient](../interactive/level-gradient.md)
 
 </div>
 
@@ -293,6 +293,10 @@ title: "Functions of several variables"
 !!! chiave ""
 
     The gradient $\nabla f(\boldsymbol x)$ is the column vector of first-order partial derivatives: it points in the direction of steepest ascent and is perpendicular to the level set through $\boldsymbol x$. The Hessian $\nabla^2 f(\boldsymbol x)$ is the (symmetric) matrix of second-order partial derivatives and describes the local curvature of $f$.
+
+---
+
+**Exercises on this chapter:** [:material-pencil: Functions of several variables](../exercises/ex-02-functions-several-variables.md)
 
 <!-- laboratorio-interattivo: sezione generata da interattivi.py -->
 

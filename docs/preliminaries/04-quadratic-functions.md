@@ -6,7 +6,7 @@ title: "Quadratic functions"
 
 <div class="info-capitolo" markdown>
 
-**Part 1 · Preliminaries · Chapter 4** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](../pdf/lecture-notes-1-preliminaries.pdf) · [:material-presentation: Slides](../pdf/slides-04-quadratic-functions.pdf) · [:material-pencil: Exercises](../exercises/ex-04-quadratic-functions.md)
+**Part 1 · Preliminaries · Chapter 4** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](../pdf/lecture-notes-1-preliminaries.pdf) · [:material-presentation: Slides](../pdf/slides-04-quadratic-functions.pdf) · [:material-pencil: Exercises: Quadratic functions](../exercises/ex-04-quadratic-functions.md) · [:material-gesture-tap: App: The matrix Q](../interactive/matrix-q.md)
 
 </div>
 
@@ -578,6 +578,10 @@ title: "Quadratic functions"
 !!! chiave ""
 
     A quadratic function ${\boldsymbol x}' {\boldsymbol Q} \; {\boldsymbol x}$ is convex in its domain if and only if the matrix ${\boldsymbol Q}$ is positive semidefinite. Adding a linear function and a constant does not change its convexity.
+
+---
+
+**Exercises on this chapter:** [:material-pencil: Quadratic functions](../exercises/ex-04-quadratic-functions.md)
 
 <!-- laboratorio-interattivo: sezione generata da interattivi.py -->
 

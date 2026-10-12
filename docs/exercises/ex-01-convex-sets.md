@@ -6,7 +6,7 @@ title: "Exercises · Convex sets"
 
 <div class="info-capitolo" markdown>
 
-**Exercises · Chapter 1** · each solution opens with a click · [:material-book-open-variant: Chapter 1](../preliminaries/01-convex-sets.md) · [:material-file-pdf-box: Exercises, volume 1 (PDF)](../pdf/exercises-1-preliminaries.pdf)
+**Exercises · Chapter 1** · each solution opens with a click · [:material-book-open-variant: Chapter 1: Convex sets](../preliminaries/01-convex-sets.md) · [:material-file-pdf-box: Exercises, volume 1 (PDF)](../pdf/exercises-1-preliminaries.pdf)
 
 </div>
 
