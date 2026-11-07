@@ -27,6 +27,7 @@ with their proofs, examples worked out step by step and exercises with solutions
 
 [Start :material-arrow-right:](preliminaries/index.md){ .md-button .md-button--primary }
 [:material-pencil: Exercises](exercises/index.md){ .md-button }
+[:material-gesture-tap: Lab](interactive/index.md){ .md-button }
 [:material-clipboard-check-outline: Quiz](self-assessment.md){ .md-button }
 [:material-download: Downloads](downloads.md){ .md-button }
 
@@ -38,6 +39,8 @@ with their proofs, examples worked out step by step and exercises with solutions
 Local descent: on a convex function every local minimum is global; on a non-convex one the descent can stop early.
 
 <div class="gi" data-grafico="discesa-locale"></div>
+
+[:material-gesture-tap: More apps in the lab](interactive/index.md){ .md-button }
 <!-- /collana-app -->
 
 ## The parts of the course
@@ -66,42 +69,40 @@ Local descent: on a convex function every local minimum is global; on a non-conv
 
 </div>
 
+<!-- collana-da-non-perdere -->
 ## Don't miss
 
 <div class="grid cards" markdown>
-
--   :material-gesture-tap: **Interactive lab**
-
-    ---
-
-    Move the parameters with the sliders, drag the points and watch sets, functions and
-    optima change; then put yourself to the test with the challenges.
-
-    [:octicons-arrow-right-24: The graphs](interactive/index.md)
 
 -   :material-pencil-box-multiple: **Exercises with solutions**
 
     ---
 
-    Exercises for every chapter, each with a worked solution that opens with a click.
+    Exercises for every chapter, each with its worked solution that opens with a click.
 
     [:octicons-arrow-right-24: The exercises](exercises/index.md)
 
--   :material-clipboard-check-outline: **Self-assessment**
+-   :material-clipboard-check-outline: **Self-assessment quiz**
 
     ---
 
-    *Mock exam*
-
-    A new mock exam at every start: 13 questions, 33 points, with the solutions and links to the notes.
+    A new mock exam at every start: 13 questions, 33 points, with the solution and the link to the notes. Downloads also has the full question bank.
 
     [:octicons-arrow-right-24: Test yourself](self-assessment.md)
 
--   :material-download: **Lecture notes and exercise books in PDF**
+-   :material-gesture-tap: **Interactive lab**
 
     ---
 
-    Two volumes of lecture notes and two exercise books, with the same numbering as the website.
+    Apps running in the browser: move the parameters and watch the ideas of the course at work, one step at a time.
+
+    [:octicons-arrow-right-24: The lab](interactive/index.md)
+
+-   :material-download: **Lecture notes in PDF**
+
+    ---
+
+    Lecture notes, exercise books and slides in PDF, with the same numbering as the website.
 
     [:octicons-arrow-right-24: Downloads](downloads.md)
 
@@ -109,11 +110,12 @@ Local descent: on a convex function every local minimum is global; on a non-conv
 
     ---
 
-    All chapters with their sections, on one page.
+    All the chapters with their sections on one page, and how each chapter is organized.
 
     [:octicons-arrow-right-24: The index](indice.md)
 
 </div>
+<!-- /collana-da-non-perdere -->
 
 ---
 
@@ -166,6 +168,8 @@ Ten courses built the same way: lecture notes online and in PDF, exercises with 
 
 </div>
 <!-- /collana -->
+
+---
 
 Teaching material by **[Fabio Furini](https://fabiofurini.github.io/)** —
 [DIAG](https://www.diag.uniroma1.it/), Sapienza University of Rome.
