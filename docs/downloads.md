@@ -63,3 +63,10 @@ The lecture notes and the exercise books in PDF, updated at every publication of
 
 - :material-presentation: [Chapter 5 · Optimization problems](pdf/slides-05-optimization-problems.pdf)
 - :material-presentation: [Chapter 6 · Convex and concave optimization problems](pdf/slides-06-convex-concave-problems.pdf)
+
+<!-- banca-domande -->
+## Quiz question bank
+
+All the self-assessment questions, by part and chapter, with the correct answer and the explanation; for the generated questions, whose numbers change at every start, a few examples.
+
+[:material-format-list-checks: Question bank](quiz/question_list.html){ .md-button }
