@@ -25,6 +25,8 @@ professor at [DIAG](https://www.diag.uniroma1.it/), Sapienza University of Rome.
 quadratic functions, convex and concave optimization problems, with definitions, theorems
 with their proofs, examples worked out step by step and exercises with solutions.
 
+Prerequisites: [Mathematical Analysis 1](https://fabiofurini.github.io/mathematical-analysis-1/) and [Linear Algebra](https://fabiofurini.github.io/linear-algebra/).
+
 [Start :material-arrow-right:](preliminaries/index.md){ .md-button .md-button--primary }
 [:material-pencil: Exercises](exercises/index.md){ .md-button }
 [:material-gesture-tap: Lab](interactive/index.md){ .md-button }
