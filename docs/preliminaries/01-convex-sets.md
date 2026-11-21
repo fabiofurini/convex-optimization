@@ -10,6 +10,24 @@ title: "Convex sets"
 
 </div>
 
+!!! nota "Prerequisites"
+
+    - From the module <em>Linear Algebra</em>, the chapter [«Vectors»](https://fabiofurini.github.io/linear-algebra/vectors-matrices/01-vectors/): vectors of $\R^n$, their sum and their product by a scalar.
+
+    - From the same module, the chapter [«Norms»](https://fabiofurini.github.io/linear-algebra/norms/01-norms/): the norms $\|\cdot\|_1$, $\|\cdot\|_2$ and $\|\cdot\|_\infty$, used to describe balls.
+
+!!! chiave "Objectives"
+
+    At the end of this chapter you will be able to:
+
+    - write the convex combinations of two and of $m$ points, and draw the segment between two points;
+
+    - state the definition of a convex set and decide whether a set is convex;
+
+    - prove that the balls of the norms $1$, $2$ and $\infty$ are convex sets;
+
+    - use the fact that the intersection of convex sets is convex.
+
 ## 1.1 Convex combination
 
 <a id="box-1-def-convexcombination"></a>
@@ -422,6 +440,18 @@ title: "Convex sets"
 ![Figure 15](../img/01-convex-sets/fig15.svg){ .fig .ovale loading=lazy style="width:37%" }
 
 </div>
+
+## 1.5 In summary
+
+!!! chiave "In summary"
+
+    - A convex combination of $m$ points has non-negative coefficients with sum $1$; the convex combinations of two points form the segment between them.
+
+    - A set is convex if it contains the segment between any two of its points.
+
+    - The balls $\{{\boldsymbol x} : \|{\boldsymbol x}-{\boldsymbol c}\| \le r\}$ of the norms $1$, $2$ and $\infty$ (a diamond, a disk and a square in $\R^2$) are convex.
+
+    - The intersection of finitely many convex sets is convex.
 
 ---
 

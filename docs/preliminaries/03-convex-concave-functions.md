@@ -10,6 +10,26 @@ title: "Convex and concave functions"
 
 </div>
 
+!!! nota "Prerequisites"
+
+    - From this module, [Chapter 1 «Convex sets»](https://fabiofurini.github.io/convex-optimization/preliminaries/01-convex-sets/): convex combinations and convex sets.
+
+    - From this module, [Chapter 2 «Functions of several variables»](https://fabiofurini.github.io/convex-optimization/preliminaries/02-functions-several-variables/): functions of several variables.
+
+    - From the module <em>Linear Algebra</em>, the chapter [«Norms»](https://fabiofurini.github.io/linear-algebra/norms/01-norms/): norms of vectors.
+
+!!! chiave "Objectives"
+
+    At the end of this chapter you will be able to:
+
+    - state the definitions of convex and concave function on a convex domain;
+
+    - prove the convexity of quadratic, linear and absolute-value functions from the definition;
+
+    - prove that every norm, and the squared Euclidean norm, is a convex function;
+
+    - combine convex functions with non-negative sums and maxima, and build convex sets from constraints $f_i({\boldsymbol x}) \le 0$.
+
 ## 3.1 Convex functions
 
 <a id="box-1-def-convexfunction"></a>
@@ -783,6 +803,18 @@ title: "Convex and concave functions"
 !!! chiave ""
 
     The points that satisfy a finite number of constraints $f_i({\boldsymbol x}) \le 0$ with convex functions $f_i$ form a convex set. For instance, every half-space $\{{\boldsymbol x} \in \R^n : {\boldsymbol a}'{\boldsymbol x} \le b\}$, with ${\boldsymbol a} \in \R^n$ and $b \in \R$, is a convex set of this kind, since the linear function ${\boldsymbol a}'{\boldsymbol x} - b$ is convex; so is every intersection of finitely many half-spaces, as the polyhedra of linear programming.
+
+## 3.6 In summary
+
+!!! chiave "In summary"
+
+    - A function is convex on a convex domain if its value at a convex combination of two points is at most the same combination of the values; it is concave if $-f$ is convex.
+
+    - Linear functions are both convex and concave; the absolute value, every norm and the squared Euclidean norm are convex.
+
+    - Non-negative combinations and maxima of convex functions are convex.
+
+    - The points that satisfy finitely many constraints $f_i({\boldsymbol x}) \le 0$ with convex $f_i$ form a convex set.
 
 ---
 

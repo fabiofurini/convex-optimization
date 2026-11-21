@@ -34,21 +34,25 @@ lecture notes: on the website and in the PDF you find everything in the same pla
     - 1.2 Convex sets
     - 1.3 Examples of convex sets
     - 1.4 Properties of convex sets
+    - 1.5 In summary
 2. [Functions of several variables](preliminaries/02-functions-several-variables.md)
     - 2.1 Functions of several variables
     - 2.2 Gradient, Hessian and level sets
     - 2.3 Examples of functions that are not quadratic
+    - 2.4 In summary
 3. [Convex and concave functions](preliminaries/03-convex-concave-functions.md)
     - 3.1 Convex functions
     - 3.2 Concave functions
     - 3.3 Examples of convex and concave functions
     - 3.4 Convex functions defined by norms
     - 3.5 Properties of convex and concave functions
+    - 3.6 In summary
 4. [Quadratic functions](preliminaries/04-quadratic-functions.md)
     - 4.1 Quadratic functions
     - 4.2 Gradient, Hessian and level sets
     - 4.3 Convexity of quadratic functions
     - 4.4 Quadratic functions with a linear part
+    - 4.5 In summary
 
 ## [Optimization problems](problems/index.md)
 
@@ -56,7 +60,9 @@ lecture notes: on the website and in the PDF you find everything in the same pla
     - 5.1 Optimization problems
     - 5.2 Properties of optimization problems
     - 5.3 Local and global optimal solutions
+    - 5.4 In summary
 6. [Convex and concave optimization problems](problems/06-convex-concave-problems.md)
     - 6.1 Convex and concave optimization problems
     - 6.2 Local optima of convex and concave problems
     - 6.3 Examples of convex and concave optimization problems
+    - 6.4 In summary

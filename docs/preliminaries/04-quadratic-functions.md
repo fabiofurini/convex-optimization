@@ -10,6 +10,26 @@ title: "Quadratic functions"
 
 </div>
 
+!!! nota "Prerequisites"
+
+    - From this module, [Chapter 2 «Functions of several variables»](https://fabiofurini.github.io/convex-optimization/preliminaries/02-functions-several-variables/): gradient, Hessian and level sets.
+
+    - From this module, [Chapter 3 «Convex and concave functions»](https://fabiofurini.github.io/convex-optimization/preliminaries/03-convex-concave-functions/): convex functions and the convexity of sums.
+
+    - From the module <em>Linear Algebra</em>, the chapter [«Matrices»](https://fabiofurini.github.io/linear-algebra/vectors-matrices/02-matrices/): symmetric matrices, the transpose and the product of a matrix by a vector.
+
+!!! chiave "Objectives"
+
+    At the end of this chapter you will be able to:
+
+    - write a quadratic function ${\boldsymbol x}'{\boldsymbol Q}{\boldsymbol x}$ with a symmetric matrix;
+
+    - compute its gradient $2{\boldsymbol Q}{\boldsymbol x}$ and its constant Hessian $2{\boldsymbol Q}$, and draw its level sets;
+
+    - decide whether it is convex by checking that ${\boldsymbol Q}$ is positive semidefinite;
+
+    - extend the result to quadratic functions with a linear part and a constant.
+
 ## 4.1 Quadratic functions
 
 <a id="box-1-def-quadratic"></a>
@@ -578,6 +598,16 @@ title: "Quadratic functions"
 !!! chiave ""
 
     A quadratic function ${\boldsymbol x}' {\boldsymbol Q} \; {\boldsymbol x}$ is convex in its domain if and only if the matrix ${\boldsymbol Q}$ is positive semidefinite. Adding a linear function and a constant does not change its convexity.
+
+## 4.5 In summary
+
+!!! chiave "In summary"
+
+    - The matrix ${\boldsymbol Q}$ of a quadratic function ${\boldsymbol x}'{\boldsymbol Q}{\boldsymbol x}$ can always be taken symmetric.
+
+    - With ${\boldsymbol Q}$ symmetric, the gradient is $2{\boldsymbol Q}{\boldsymbol x}$ and the Hessian is the constant matrix $2{\boldsymbol Q}$.
+
+    - The function is convex if and only if ${\boldsymbol Q}$ is positive semidefinite; adding a linear function and a constant does not change this.
 
 ---
 

@@ -10,6 +10,26 @@ title: "Convex and concave optimization problems"
 
 </div>
 
+!!! nota "Prerequisites"
+
+    - From this module, [Chapter 5 «Optimization problems»](https://fabiofurini.github.io/convex-optimization/problems/05-optimization-problems/): optimization problems and local and global optimal solutions.
+
+    - From this module, [Chapter 3 «Convex and concave functions»](https://fabiofurini.github.io/convex-optimization/preliminaries/03-convex-concave-functions/): convex and concave functions.
+
+    - From this module, [Chapter 1 «Convex sets»](https://fabiofurini.github.io/convex-optimization/preliminaries/01-convex-sets/): convex sets.
+
+!!! chiave "Objectives"
+
+    At the end of this chapter you will be able to:
+
+    - define convex minimization and concave maximization problems;
+
+    - prove that in a convex minimization problem every point of local minimum is a point of minimum;
+
+    - apply the same result to concave maximization problems;
+
+    - solve small convex and concave problems by finding a local optimum.
+
 ## 6.1 Convex and concave optimization problems
 
 <a id="box-1-def-convexproblem"></a>
@@ -400,6 +420,18 @@ title: "Convex and concave optimization problems"
         \qquad \text{and} \qquad
         z(P) = f(1) = 6.
         $$
+
+## 6.4 In summary
+
+!!! chiave "In summary"
+
+    - A convex minimization problem minimizes a convex function over a convex feasible region; a concave maximization problem maximizes a concave one.
+
+    - In a convex minimization problem every point of local minimum is a point of minimum, that is, an optimal solution.
+
+    - In a concave maximization problem every point of local maximum is a point of maximum.
+
+    - So a local optimum is enough to solve these problems: no global search is needed.
 
 ---
 

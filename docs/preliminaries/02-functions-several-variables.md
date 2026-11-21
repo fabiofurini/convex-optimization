@@ -10,6 +10,24 @@ title: "Functions of several variables"
 
 </div>
 
+!!! nota "Prerequisites"
+
+    - From the module <em>Mathematical Analysis 1</em>, the chapter [«Rules for computing derivatives»](https://fabiofurini.github.io/mathematical-analysis-1/derivatives/04-differentiation-rules/): derivatives of the elementary functions and the rules to compute them.
+
+    - From the module <em>Linear Programming</em>, [Chapter 1 «Linear functions»](https://fabiofurini.github.io/linear-programming/lp-problems/01-linear-functions/): gradient, Hessian and level sets of a linear function, the simplest case.
+
+!!! chiave "Objectives"
+
+    At the end of this chapter you will be able to:
+
+    - describe a function of several real variables, its domain and its graph;
+
+    - compute the gradient and the Hessian from the partial derivatives;
+
+    - draw level sets, and check that the gradient is perpendicular to them;
+
+    - interpret the gradient as the direction of steepest ascent and the Hessian as the local curvature.
+
 ## 2.1 Functions of several variables
 
 <a id="box-1-def-function"></a>
@@ -293,6 +311,16 @@ title: "Functions of several variables"
 !!! chiave ""
 
     The gradient $\nabla f(\boldsymbol x)$ is the column vector of first-order partial derivatives: it points in the direction of steepest ascent and is perpendicular to the level set through $\boldsymbol x$. The Hessian $\nabla^2 f(\boldsymbol x)$ is the (symmetric) matrix of second-order partial derivatives and describes the local curvature of $f$.
+
+## 2.4 In summary
+
+!!! chiave "In summary"
+
+    - The gradient $\nabla f({\boldsymbol x})$ is the column vector of the first partial derivatives; the Hessian $\nabla^2 f({\boldsymbol x})$ is the matrix of the second partial derivatives.
+
+    - The gradient, when nonzero, points in the direction of steepest ascent; the Hessian describes how the gradient changes around ${\boldsymbol x}$.
+
+    - A level set $L(k)$ collects the points where $f$ takes the value $k$; the gradient is perpendicular to the level set through ${\boldsymbol x}$.
 
 ---
 

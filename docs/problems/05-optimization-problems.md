@@ -10,6 +10,26 @@ title: "Optimization problems"
 
 </div>
 
+!!! nota "Prerequisites"
+
+    - From this module, [Chapter 2 «Functions of several variables»](https://fabiofurini.github.io/convex-optimization/preliminaries/02-functions-several-variables/): functions of several variables.
+
+    - From the module <em>Mathematical Analysis 1</em>, the chapter [«Ordered fields, supremum/infimum and the completeness axiom»](https://fabiofurini.github.io/mathematical-analysis-1/numbers/03-ordered-fields/): infimum and supremum of a set of real numbers.
+
+    - From the module <em>Linear Programming</em>, [Chapter 3 «Linear optimization problems»](https://fabiofurini.github.io/linear-programming/lp-problems/03-linear-optimization-problems/): LP problems, the special case with a linear objective and a polyhedron.
+
+!!! chiave "Objectives"
+
+    At the end of this chapter you will be able to:
+
+    - state the definition of an optimization problem, of its optimal solutions and of its optimal value;
+
+    - recognize the three reasons why an optimal solution may not exist: unbounded, infeasible, unattainable infimum or supremum;
+
+    - use the properties that change min into max, add a constant or multiply by a constant;
+
+    - tell local optimal solutions from global ones with the $\delta$-neighborhoods.
+
 ## 5.1 Optimization problems
 
 <a id="box-1-def-optProblem"></a>
@@ -644,6 +664,18 @@ title: "Optimization problems"
     - <strong>Local maxima that are not global.</strong> In $N\big((-4),1\big) \cap [-4,4] = [-4,-3)$ we have $-2 \le x+2 < -1$ and then $f(x) = (x+2)^2 \le 4 = f(-4)$: the point $x=-4$ is a point of local maximum. In $N\big((\frac{1}{8}),1\big) = (-\frac{7}{8},\frac{9}{8})$ we have $0 < x+2 \le \frac{17}{8}$ when $x \le \frac{1}{8}$, so that $f(x) = (x+2)^2 \le \frac{289}{64}$, and $-\frac{15}{8} \le x-2 < 0$ when $x \ge \frac{1}{8}$, so that $f(x) = (x-2)^2+1 \le \frac{225}{64}+1 = \frac{289}{64}$; in both cases $f(x) \le f(\frac{1}{8})$: the point $x=\frac{1}{8}$ is a point of local maximum. Neither of them is a point of (global) maximum, since $f(-4) = 4 < 5$ and $f(\frac{1}{8}) = \frac{289}{64} < 5$.
 
     Consider the optimization problem $\min \{\, f(x) \text{ subject to } -4 \le x \le 4 \,\}$: a method that only looks at the points close to $x=2$ finds the local minimum $1$, but the optimal value is $z(P) = 0$, attained at $\tilde{\boldsymbol x}(P) = (-2)$.
+
+## 5.4 In summary
+
+!!! chiave "In summary"
+
+    - An optimization problem minimizes or maximizes an objective function $f$ over a feasible region $F$; the goal is an optimal solution, not only the optimal value $z(P)$.
+
+    - An optimal solution may not exist because the problem is unbounded, infeasible, or has an infimum (supremum) that is not attained.
+
+    - $\max f = -\min(-f)$ with the same optimal solutions; adding a constant or multiplying by a positive constant does not change them, a negative constant swaps minima and maxima.
+
+    - A point of local minimum is the best in a $\delta$-neighborhood; it need not be a point of (global) minimum.
 
 ---
 
