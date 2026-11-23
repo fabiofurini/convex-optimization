@@ -21,9 +21,10 @@ hide:
 Teaching material conceived and developed by **[Fabio Furini](https://fabiofurini.github.io/)**, associate
 professor at [DIAG](https://www.diag.uniroma1.it/), Sapienza University of Rome.
 
-**The course lecture notes, online**: convex sets, functions of several variables, convex functions,
-quadratic functions, convex and concave optimization problems, with definitions, theorems
-with their proofs, examples worked out step by step and exercises with solutions.
+The course presents convex optimization: convex sets, functions of several variables, convex and
+quadratic functions, convex and concave optimization problems.
+
+Every chapter has definitions, theorems with proofs, examples worked out step by step and exercises with solutions.
 
 Prerequisites: [Mathematical Analysis 1](https://fabiofurini.github.io/mathematical-analysis-1/) and [Linear Algebra](https://fabiofurini.github.io/linear-algebra/).
 
