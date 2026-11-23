@@ -24,8 +24,6 @@ professor at [DIAG](https://www.diag.uniroma1.it/), Sapienza University of Rome.
 The course presents convex optimization: convex sets, functions of several variables, convex and
 quadratic functions, convex and concave optimization problems.
 
-Every chapter has definitions, theorems with proofs, examples worked out step by step and exercises with solutions.
-
 Prerequisites: [Mathematical Analysis 1](https://fabiofurini.github.io/mathematical-analysis-1/) and [Linear Algebra](https://fabiofurini.github.io/linear-algebra/).
 
 [Start :material-arrow-right:](preliminaries/index.md){ .md-button .md-button--primary }
