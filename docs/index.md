@@ -54,8 +54,6 @@ Local descent: on a convex function every local minimum is global; on a non-conv
 
     Convex combinations and convex sets, functions of several variables (gradient, Hessian, level sets), norms, convex and concave functions, quadratic functions and their convexity.
 
-    1\. Convex sets · 2\. Functions of several variables · 3\. Convex and concave functions · 4\. Quadratic functions
-
     [:octicons-arrow-right-24: The chapters](preliminaries/index.md)
 
 -   :material-chart-bell-curve-cumulative: **2 · Optimization problems**
@@ -63,8 +61,6 @@ Local descent: on a convex function every local minimum is global; on a non-conv
     ---
 
     Optimization problems and their optimal solutions, local and global optima, convex and concave problems, where every local optimum is global.
-
-    5\. Optimization problems · 6\. Convex and concave optimization problems
 
     [:octicons-arrow-right-24: The chapters](problems/index.md)
 
