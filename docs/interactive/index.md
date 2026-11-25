@@ -5,7 +5,7 @@ hide:
 
 # Interactive lab
 
-Here you can get your hands on optimization. Each app opens in a page of its own, at full
+Each app opens in a page of its own, at full
 size: drag the points, move the sliders and watch sets, functions and optima change.
 
 ## 1. Convex sets { #cap-1 }

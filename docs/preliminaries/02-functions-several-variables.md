@@ -330,7 +330,7 @@ title: "Functions of several variables"
 
 ## Interactive lab { #interactive-lab }
 
-The ideas of the chapter, hands on: move the sliders and drag the points.
+The apps of this chapter: move the sliders and drag the points.
 All the graphs of the course are in the [interactive lab](../interactive/index.md#cap-2).
 
 <div class="gi" data-grafico="livello-gradiente"></div>
